@@ -1,0 +1,41 @@
+{
+  "edition": "2026-09-10",
+  "desktopSceneChecks": 96,
+  "desktopResolutions": [
+    "1280x720",
+    "1600x900",
+    "1920x1080",
+    "3840x2160"
+  ],
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "mobileWidths": [
+    320,
+    390,
+    768
+  ],
+  "failures": [],
+  "consoleErrors": [],
+  "interactionChecks": [
+    "No audience source links",
+    "Chart step and area reveal",
+    "Chart wraps to first milestone",
+    "Chart hint selection pauses loop",
+    "Chart resumes",
+    "Offscreen chart stops",
+    "Calendar advances",
+    "Calendar focus hint",
+    "Global motion stop",
+    "Hide/show stage controls",
+    "Presentation navigation and exit",
+    "Themes and persistence",
+    "No-JS mobile and desktop",
+    "Reduced motion shows full chart"
+  ],
+  "limits": [
+    "Physical projector and last-row readability not tested",
+    "Native screen-reader and physical device checks not performed"
+  ]
+}

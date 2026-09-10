@@ -48,5 +48,32 @@
     "height": 463,
     "bytes": 72950,
     "sha256": "e06de8480338941db986201f9565c513cae4d1a81a76a068b6d24ff7bd60a445"
+  },
+  {
+    "file": "assets/wheel.webp",
+    "source": "https://parkskazka.ru/uploads/product/000/26/9t4zykalhkv0p510uywvzkdnx5vm4rt4_2026-06-26_19-36-17.jpeg",
+    "verified": "2026-09-10",
+    "width": 1020,
+    "height": 680,
+    "bytes": 235848,
+    "sha256": "e8ece4fb6ae4a809c6e755054edfca8a901fb4c66a45534e716bebd75b64deba"
+  },
+  {
+    "file": "assets/extreme-360.webp",
+    "source": "https://parkskazka.ru/uploads/product/000/6/01-360_2026-08-05_16-26-19.jpeg",
+    "verified": "2026-09-10",
+    "width": 1600,
+    "height": 1067,
+    "bytes": 184530,
+    "sha256": "2ce732123726320fd05bb8919620661ef9e29cb73fcd15b680d2c83183c50191"
+  },
+  {
+    "file": "assets/shaker.webp",
+    "source": "https://parkskazka.ru/uploads/product/000/11/01-sheyker_2026-08-05_16-27-49.jpeg",
+    "verified": "2026-09-10",
+    "width": 1600,
+    "height": 1067,
+    "bytes": 319704,
+    "sha256": "38c1a362e20b7e16a4a839b4c3a804ff7c9075495704f4f80c35a2bda2babd9e"
   }
 ]
