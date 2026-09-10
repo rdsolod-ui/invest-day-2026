@@ -1,0 +1,1 @@
+{"name":"invest-day-2026","version":"1.0.0","private":true,"type":"module","engines":{"node":">=22.12.0"},"scripts":{"dev":"astro dev --host 127.0.0.1","build":"astro build && node scripts/verify-build.mjs","preview":"astro preview --host 127.0.0.1","test":"node --test tests/*.test.mjs"},"dependencies":{"astro":"7.3.2"}}

@@ -1,0 +1,12 @@
+---
+interface Props {title:string; values:number[]; max:number; labels:string[]; unit:string; approximate?:boolean; compact?:boolean}
+const {title,values,max,labels,unit,approximate=false,compact=false}=Astro.props;
+const fmt=(n:number)=>new Intl.NumberFormat('ru-RU',{maximumFractionDigits:1}).format(n);
+---
+<div class="chart" data-reveal>
+ <h3>{title}</h3><span class="chart-unit">{unit}</span>
+ <svg viewBox={compact?"0 0 560 146":"0 0 560 226"} role="img" aria-label={`${title}: ${labels[0]} — ${fmt(values[0])}; ${labels[1]} — ${fmt(values[1])} ${unit}`}>
+  {[0,.25,.5,.75,1].map((v)=><g><line class="gridline" x1={94+v*375} y1="18" x2={94+v*375} y2={compact?110:179}/><text class="axis-label" x={94+v*375} y={compact?139:211} text-anchor="middle">{fmt(v*max)}</text></g>)}
+  {values.map((v,i)=><g><text class="year-label" x="0" y={compact?42+i*54:65+i*90}>{labels[i]}</text><rect class={`bar bar-${i}`} x="94" y={compact?22+i*54:36+i*90} width={v/max*375} height={compact?30:42} rx="5"/><text class="bar-label" x={102+v/max*375} y={compact?42+i*54:64+i*90}>{approximate?'≈':''}{fmt(v)}</text></g>)}
+ </svg>
+</div>

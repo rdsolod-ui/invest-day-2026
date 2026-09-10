@@ -1,0 +1,52 @@
+[
+  {
+    "file": "assets/park-wide.webp",
+    "source": "https://parkskazka.ru/uploads/page/15/about_2026-08-10_08-34-31.jpg",
+    "sourcePage": "https://parkskazka.ru/o-parke",
+    "verified": "2026-09-10",
+    "width": 1400,
+    "height": 933,
+    "bytes": 396390,
+    "sha256": "5a87d420faae591b1b5b3c3c860f910dab3f33a2390fe1607a696e1a1659e422"
+  },
+  {
+    "file": "assets/bumerang.webp",
+    "source": "https://parkskazka.ru/uploads/product/000/64/bumerang_5296_2026-08-27_15-49-02.jpeg",
+    "sourcePage": "https://parkskazka.ru/",
+    "verified": "2026-09-10",
+    "width": 1200,
+    "height": 754,
+    "bytes": 146628,
+    "sha256": "2856975f15d1270793bfa26d9aae815a9fd8936e01be463a8ce6f25545ebaee4"
+  },
+  {
+    "file": "assets/smerch.webp",
+    "source": "https://parkskazka.ru/uploads/product/000/65/01-smerch_2026-08-05_16-14-15.jpeg",
+    "sourcePage": "https://parkskazka.ru/",
+    "verified": "2026-09-10",
+    "width": 900,
+    "height": 600,
+    "bytes": 65822,
+    "sha256": "e8717e85dd9fb8504530101e89bbac73bd3799235f57ca0456868cfc1446d8f7"
+  },
+  {
+    "file": "assets/family.webp",
+    "source": "https://parkskazka.ru/uploads/product/000/17/9_2026-09-04_14-47-40.png",
+    "sourcePage": "https://parkskazka.ru/",
+    "verified": "2026-09-10",
+    "width": 900,
+    "height": 600,
+    "bytes": 183128,
+    "sha256": "835bd59eb60700441eae3b845f82277b12aa557a0d0ab9913004a9bacbf7dd16"
+  },
+  {
+    "file": "assets/dragon.webp",
+    "source": "https://parkskazka.ru/uploads/product/000/66/17_55_58_2026-09-01_14-58-13.png",
+    "sourcePage": "https://parkskazka.ru/",
+    "verified": "2026-09-10",
+    "width": 900,
+    "height": 463,
+    "bytes": 72950,
+    "sha256": "e06de8480338941db986201f9565c513cae4d1a81a76a068b6d24ff7bd60a445"
+  }
+]
