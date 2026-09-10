@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-10",
+  "scenes": 14,
+  "stageChecks": 112,
+  "mobileChecks": 6,
+  "failures": [],
+  "errors": [],
+  "fonts": {
+    "manrope": true,
+    "golos": true
+  },
+  "photosDecodedBeforeShow": true,
+  "speakerOrder": [
+    "start",
+    "speaker-viktor",
+    "story",
+    "scale",
+    "product",
+    "speaker-natalia",
+    "investment"
+  ],
+  "visualReview": [
+    "speaker-viktor-light",
+    "speaker-natalia-dark"
+  ]
+}

@@ -27,7 +27,7 @@ function animateScene(scene:HTMLElement){
  sceneAnimations.get(scene)?.forEach(a=>a.cancel());const list:Animation[]=[];sceneAnimations.set(scene,list);if(!canMove())return;
  const elements=scene.querySelectorAll<HTMLElement>('[data-reveal]');elements.forEach((el,i)=>{list.push(el.animate([{opacity:.15,transform:'translateY(38px)'},{opacity:1,transform:'translateY(0)'}],{duration:780,delay:Math.min(i*95,475),easing:'cubic-bezier(.16,1,.3,1)'}));});
  scene.querySelectorAll<SVGRectElement>('.bar').forEach((bar,i)=>{list.push(bar.animate([{transform:'scaleX(.04)'},{transform:'scaleX(1)'}],{duration:1100,delay:200+i*110,easing:'cubic-bezier(.16,1,.3,1)'}));bar.style.transformOrigin='94px center';});
- const photo=scene.querySelector<HTMLElement>('.hero-background,.story-photo img,.lead-photo img,.execution-photo img,.closing-background');if(photo)list.push(photo.animate([{transform:'scale(1.06)'},{transform:'scale(1)'}],{duration:9500,easing:'cubic-bezier(.2,0,.4,1)'}));
+ const photo=scene.querySelector<HTMLElement>('.hero-background,.story-photo img,.lead-photo img,.execution-photo img,.closing-background,.speaker-photo img');if(photo)list.push(photo.animate([{transform:'scale(1.06)'},{transform:'scale(1)'}],{duration:9500,easing:'cubic-bezier(.2,0,.4,1)'}));
 }
 function toggleChrome(force?:boolean){const hidden=force??!controls.classList.contains('controls-hidden');controls.classList.toggle('controls-hidden',hidden);controls.inert=hidden;if(hidden&&(document.activeElement instanceof HTMLElement))document.activeElement.blur();}
 document.querySelector('#hide-controls')!.addEventListener('click',()=>toggleChrome(true));

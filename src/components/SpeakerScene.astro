@@ -1,0 +1,22 @@
+---
+interface Props {
+ speaker:{id:string;firstName:string;lastName:string;role:string;company:string;topic:string;next:string;nextLabel:string;image:string;imageAlt:string;index:number};
+ total:number;
+}
+const {speaker:s,total}=Astro.props;
+const asset=(name:string)=>`${import.meta.env.BASE_URL.replace(/\/$/,'')}/assets/${name}`;
+---
+<div class="scene-shell">
+ <section class="scene section speaker-scene" id={s.id} data-title={`${s.firstName} ${s.lastName}`}>
+  <img class="stage-brand" src={asset('skazka-logo.svg')} alt="Сказка" width="145" height="38"/>
+  <span class="stage-index">{String(s.index).padStart(2,'0')} / {total}</span>
+  <div class="speaker-copy">
+   <p class="eyebrow" data-reveal>Знакомство со спикером</p>
+   <h2 class="speaker-name" data-reveal><span>{s.firstName}</span><span>{s.lastName}</span></h2>
+   <p class="speaker-role" data-reveal>{s.role}<span>{s.company}</span></p>
+   <div class="speaker-topic" data-reveal><span class="label">Тема выступления</span><p>{s.topic}</p></div>
+  </div>
+  <figure class="speaker-photo photo" data-reveal><img src={asset(s.image)} alt={s.imageAlt} loading="lazy"/><figcaption>Инвест День <strong>2026</strong></figcaption></figure>
+  <div class="speaker-footer"><span>Парк Сказка · Встреча с инвесторами</span><a href={`#${s.next}`}>{s.nextLabel}<span aria-hidden="true">→</span></a></div>
+ </section>
+</div>

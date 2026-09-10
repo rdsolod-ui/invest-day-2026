@@ -1,0 +1,4 @@
+[
+  {"id":"speaker-viktor","firstName":"Виктор","lastName":"Горелов","role":"Генеральный директор","company":"Парк Сказка","topic":"Трансформация парка и новая модель развития","next":"story","nextLabel":"История и продукт","image":"park-wide.webp","imageAlt":"Панорама Парка Сказка в Крылатском","index":2},
+  {"id":"speaker-natalia","firstName":"Наталья","lastName":"Луканихина","role":"Заместитель генерального директора по экономике и финансам","company":"Парк Сказка","topic":"Инвестиции, финансовые результаты и целевые ориентиры","next":"investment","nextLabel":"Финансовый блок","image":"wheel.webp","imageAlt":"Колесо обозрения в Парке Сказка","index":6}
+]
