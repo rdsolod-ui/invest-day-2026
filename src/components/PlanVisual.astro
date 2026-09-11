@@ -1,0 +1,28 @@
+---
+interface Props {kind:'heart'|'geo'|'app'}
+const {kind}=Astro.props;
+---
+<div class={`plan-visual visual-${kind}`}>
+<svg viewBox="0 0 480 210" role="img" aria-label={kind==='heart'?'Сердце Москвы: новый повод для впечатлений':kind==='geo'?'Москва и направления Подмосковья':'Концепция личного кабинета и Web App'}>
+{kind==='heart'&&<>
+ <path class="visual-grid" d="M0 170H480M0 195H480M60 0V210M160 0V210M260 0V210M360 0V210M460 0V210"/>
+ <path class="visual-city" d="M25 170V110H62V170M75 170V75H100V170M115 170V130H142M320 170V115H352V170M368 170V65H402V170M420 170V128H455V170"/>
+ <path class="visual-heart" d="M242 160C221 144 161 109 161 68C161 34 203 21 225 46L242 64L258 46C282 21 324 35 324 68C324 108 264 144 242 160Z" data-flow/>
+ <path class="visual-pulse" d="M115 101H191L204 84L224 123L246 76L263 104H362" data-draw/>
+ <circle class="visual-orbit-dot" cx="116" cy="44" r="8"/><path class="visual-star" d="M356 22V48M343 35H369"/>
+</>}
+{kind==='geo'&&<>
+ <ellipse class="visual-orbit" cx="239" cy="106" rx="188" ry="85"/><ellipse class="visual-orbit" cx="239" cy="106" rx="116" ry="56"/>
+ <path class="visual-route" d="M239 106L75 55M239 106L103 162M239 106L384 46M239 106L414 146" data-draw/>
+ {[{x:75,y:55},{x:103,y:162},{x:384,y:46},{x:414,y:146}].map(p=><g data-flow><circle class="visual-point" cx={p.x} cy={p.y} r="13"/><circle class="visual-point-halo" cx={p.x} cy={p.y} r="24"/></g>)}
+ <circle class="visual-center" cx="239" cy="106" r="48"/><path class="visual-pin" d="M239 75C220 75 211 87 215 100C218 111 239 132 239 132S260 111 263 100C267 87 258 75 239 75Z"/><circle class="visual-pin-hole" cx="239" cy="95" r="8"/>
+</>}
+{kind==='app'&&<>
+ <rect class="visual-window" x="36" y="37" width="260" height="146" rx="12"/><path class="visual-rule" d="M36 66H296"/><circle class="visual-point" cx="53" cy="51" r="4"/><circle class="visual-point" cx="68" cy="51" r="4"/>
+ <circle class="visual-avatar" cx="83" cy="108" r="20"/><path class="visual-rule" d="M123 95H242M123 112H217M62 148H182"/>
+ <rect class="visual-phone" x="302" y="17" width="115" height="179" rx="19"/><path class="visual-rule" d="M341 31H378"/>
+ <rect class="visual-ticket" x="319" y="58" width="81" height="51" rx="7" data-flow/><path class="visual-check" d="M343 82L354 92L378 68" data-draw/>
+ <path class="visual-rule" d="M321 133H395M321 148H375"/><circle class="visual-point" cx="360" cy="178" r="5"/>
+</>}
+</svg>
+</div>

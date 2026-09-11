@@ -1,0 +1,20 @@
+---
+import data from '../data/season-sales.json';
+const fmt=(v:number)=>new Intl.NumberFormat('ru-RU').format(v);
+const top=Math.ceil(Math.max(...data.seasons.map(s=>s.total))/100000)*100000;
+const x=(day:number)=>95+day/183*1020,y=(v:number)=>347-v/top*285;
+const series=data.seasons.map(s=>{let total=0;const pts=[{day:0,value:0},...s.daily.map((d,i)=>({day:i+1,value:total+=d.sold}))];return{...s,line:pts.map((p,i)=>`${i?'L':'M'}${x(p.day)},${y(p.value)}`).join(' '),last:pts.at(-1)!}});
+const cutoff=series[1].last.day;
+const ticks=[{day:0,label:'01.04'},{day:30,label:'01.05'},{day:61,label:'01.06'},{day:91,label:'01.07'},{day:122,label:'01.08'},{day:153,label:'01.09'},{day:183,label:'30.09'}];
+---
+<div class="season-sales">
+<div class="season-legend">{series.map(s=><div class={`season-key season-${s.year}`}><span class="season-swatch" aria-hidden="true"></span><div><span>{s.year} · 01.04–{s.year===2025?'30.09':'11.09'}</span><strong>{fmt(s.total)} <small>шт.</small></strong></div></div>)}</div>
+<svg viewBox="0 0 1170 405" role="img" aria-labelledby="season-sales-title season-sales-desc">
+<title id="season-sales-title">Все каналы: проданные билеты накопительным итогом</title><desc id="season-sales-desc">2025: {fmt(series[0].total)} за 1 апреля — 30 сентября. 2026: {fmt(series[1].total)} за 1 апреля — 11 сентября. Разные даты окончания, текущий день неполный.</desc>
+<text x="95" y="29" class="season-axis-caption">тыс. билетов · накопительно</text>
+{[0,.25,.5,.75,1].map(f=><g><line x1="95" x2="1115" y1={y(top*f)} y2={y(top*f)} class="season-grid"/><text x="77" y={y(top*f)+8} text-anchor="end" class="season-axis">{fmt(top*f/1000)}</text></g>)}
+<line x1={x(cutoff)} x2={x(cutoff)} y1="47" y2="347" class="season-cutoff"/><text x={x(cutoff)-12} y="48" text-anchor="end" class="season-cutoff-label">11.09.2026</text>
+{series.map(s=><g class={`season-${s.year}`}><path d={s.line} class="season-line" data-draw/><circle cx={x(s.last.day)} cy={y(s.last.value)} r="7" class="season-end"/></g>)}
+{ticks.map(t=><text x={x(t.day)} y="387" text-anchor="middle" class="season-axis">{t.label}</text>)}
+</svg><p class="season-chart-note">2026: 164 дня · 2025: 183 дня. Линия 2026 заканчивается на дате среза.</p>
+</div>

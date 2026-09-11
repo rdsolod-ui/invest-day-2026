@@ -1,0 +1,24 @@
+{
+  "date": "2026-09-11",
+  "scenes": 23,
+  "sceneViewportThemeChecks": 184,
+  "mobileVariants": 6,
+  "failures": [],
+  "errors": [],
+  "motion": {
+    "fourAreaColors": [
+      "rgb(0, 127, 144)",
+      "rgb(60, 104, 206)",
+      "rgb(139, 71, 184)",
+      "rgb(183, 91, 32)"
+    ],
+    "lineAnimations": true,
+    "motionOff": true,
+    "offscreenCancelled": true,
+    "reducedMotion": true,
+    "noJs": true,
+    "threePlanVisuals": true
+  },
+  "dataTests": 9,
+  "physicalVenueScreen": "not tested"
+}
