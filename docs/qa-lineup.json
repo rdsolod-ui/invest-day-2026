@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-11",
+  "scenes": 16,
+  "speakerScenes": [
+    "speaker-viktor",
+    "speaker-ivan",
+    "speaker-natalia",
+    "speaker-alexey"
+  ],
+  "authority": "User supplied speaker lineup, 2026-09-11",
+  "sceneViewportThemeChecks": 128,
+  "mobileVariants": 6,
+  "failures": [],
+  "errors": [],
+  "fonts": {
+    "manrope": true,
+    "golos": true
+  },
+  "motionAndLinks": "passed",
+  "physicalVenueScreen": "not tested"
+}

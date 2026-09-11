@@ -1,4 +1,55 @@
 [
-  {"id":"speaker-viktor","firstName":"Виктор","lastName":"Горелов","role":"Генеральный директор","company":"Парк Сказка","topic":"Трансформация парка и новая модель развития","next":"story","nextLabel":"История и продукт","image":"park-wide.webp","imageAlt":"Панорама Парка Сказка в Крылатском","index":2},
-  {"id":"speaker-natalia","firstName":"Наталья","lastName":"Луканихина","role":"Заместитель генерального директора по экономике и финансам","company":"Парк Сказка","topic":"Инвестиции, финансовые результаты и целевые ориентиры","next":"investment","nextLabel":"Финансовый блок","image":"wheel.webp","imageAlt":"Колесо обозрения в Парке Сказка","index":6}
+  {
+    "id": "speaker-viktor",
+    "firstName": "Виктор",
+    "lastName": "Горелов",
+    "role": "Генеральный директор",
+    "company": "Парк Сказка",
+    "topic": "Трансформация парка и новая модель развития",
+    "next": "story",
+    "nextLabel": "История и продукт",
+    "image": "park-wide.webp",
+    "imageAlt": "Панорама Парка Сказка в Крылатском",
+    "index": 2
+  },
+  {
+    "id": "speaker-ivan",
+    "firstName": "Иван",
+    "lastName": "Солодовников",
+    "role": "Директор по маркетингу и продажам",
+    "company": "Парк Сказка",
+    "topic": "Масштаб изменений и продукт на целый день",
+    "next": "scale",
+    "nextLabel": "Продукт и масштаб",
+    "image": "bumerang.webp",
+    "imageAlt": "Аттракцион Бумеранг в Парке Сказка",
+    "index": 4
+  },
+  {
+    "id": "speaker-natalia",
+    "firstName": "Наталья",
+    "lastName": "Луканихина",
+    "role": "Заместитель генерального директора по экономике и финансам",
+    "company": "Парк Сказка",
+    "topic": "Инвестиции, финансовые результаты и целевые ориентиры",
+    "next": "investment",
+    "nextLabel": "Финансовый блок",
+    "image": "wheel.webp",
+    "imageAlt": "Колесо обозрения в Парке Сказка",
+    "index": 7
+  },
+  {
+    "id": "speaker-alexey",
+    "firstName": "Алексей",
+    "lastName": "Баденский",
+    "role": "Модератор",
+    "company": "",
+    "topic": "Вопросы, ответы и обсуждение",
+    "next": "discussion",
+    "nextLabel": "К обсуждению",
+    "image": "park-wide.webp",
+    "imageAlt": "Панорама Парка Сказка",
+    "index": 15,
+    "moderator": true
+  }
 ]

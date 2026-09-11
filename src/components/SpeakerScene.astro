@@ -1,6 +1,6 @@
 ---
 interface Props {
- speaker:{id:string;firstName:string;lastName:string;role:string;company:string;topic:string;next:string;nextLabel:string;image:string;imageAlt:string;index:number};
+ speaker:{id:string;firstName:string;lastName:string;role:string;company:string;topic:string;next:string;nextLabel:string;image:string;imageAlt:string;index:number;moderator?:boolean};
  total:number;
 }
 const {speaker:s,total}=Astro.props;
@@ -11,10 +11,10 @@ const asset=(name:string)=>`${import.meta.env.BASE_URL.replace(/\/$/,'')}/assets
   <img class="stage-brand" src={asset('skazka-logo.svg')} alt="Сказка" width="145" height="38"/>
   <span class="stage-index">{String(s.index).padStart(2,'0')} / {total}</span>
   <div class="speaker-copy">
-   <p class="eyebrow" data-reveal>Знакомство со спикером</p>
-   <h2 class="speaker-name" data-reveal><span>{s.firstName}</span><span>{s.lastName}</span></h2>
-   <p class="speaker-role" data-reveal>{s.role}<span>{s.company}</span></p>
-   <div class="speaker-topic" data-reveal><span class="label">Тема выступления</span><p>{s.topic}</p></div>
+   <p class="eyebrow" data-reveal>{s.moderator ? 'Модератор встречи' : 'Знакомство со спикером'}</p>
+   <h2 class:list={["speaker-name", {"speaker-name-long":s.lastName.length>11}]} data-reveal><span>{s.firstName}</span><span>{s.lastName}</span></h2>
+   <p class="speaker-role" data-reveal>{s.role}{s.company && <span>{s.company}</span>}</p>
+   <div class="speaker-topic" data-reveal><span class="label">{s.moderator ? 'Далее' : 'Тема выступления'}</span><p>{s.topic}</p></div>
   </div>
   <figure class="speaker-photo photo" data-reveal><img src={asset(s.image)} alt={s.imageAlt} loading="lazy"/><figcaption>Инвест День <strong>2026</strong></figcaption></figure>
   <div class="speaker-footer"><span>Парк Сказка · Встреча с инвесторами</span><a href={`#${s.next}`}>{s.nextLabel}<span aria-hidden="true">→</span></a></div>
