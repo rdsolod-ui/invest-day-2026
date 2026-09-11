@@ -75,5 +75,14 @@
     "height": 1067,
     "bytes": 319704,
     "sha256": "38c1a362e20b7e16a4a839b4c3a804ff7c9075495704f4f80c35a2bda2babd9e"
+  },
+  {
+    "file": "assets/night-riders.webp",
+    "source": "Existing Night Riders project asset: images/hero.webp",
+    "verified": "2026-09-11",
+    "width": 1280,
+    "height": 720,
+    "bytes": 91270,
+    "sha256": "8596dca31f561deae660b9c40ec72bb7099a865626c0f41496db049a632a78e6"
   }
 ]

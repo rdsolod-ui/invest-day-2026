@@ -18,9 +18,9 @@
     "lastName": "Солодовников",
     "role": "Директор по маркетингу и продажам",
     "company": "Парк Сказка",
-    "topic": "Масштаб изменений и продукт на целый день",
+    "topic": "Новые аудитории, маркетинг и продажи",
     "next": "scale",
-    "nextLabel": "Продукт и масштаб",
+    "nextLabel": "Аудитория и продукт",
     "image": "bumerang.webp",
     "imageAlt": "Аттракцион Бумеранг в Парке Сказка",
     "index": 4
@@ -36,7 +36,7 @@
     "nextLabel": "Финансовый блок",
     "image": "wheel.webp",
     "imageAlt": "Колесо обозрения в Парке Сказка",
-    "index": 7
+    "index": 14
   },
   {
     "id": "speaker-alexey",
@@ -49,7 +49,7 @@
     "nextLabel": "К обсуждению",
     "image": "park-wide.webp",
     "imageAlt": "Панорама Парка Сказка",
-    "index": 15,
+    "index": 22,
     "moderator": true
   }
 ]

@@ -1,0 +1,132 @@
+{
+  "snapshot": "2026-09-11",
+  "months": [
+    {
+      "month": 1,
+      "spend_with_vat": 0.0,
+      "tickets_sold": 0.0,
+      "tickets_all": 18836.0,
+      "revenue": 0.0,
+      "coverage": 0.0
+    },
+    {
+      "month": 2,
+      "spend_with_vat": 0.0,
+      "tickets_sold": 0.0,
+      "tickets_all": 7153.0,
+      "revenue": 0.0,
+      "coverage": 0.0
+    },
+    {
+      "month": 3,
+      "spend_with_vat": 215804.96,
+      "tickets_sold": 15.0,
+      "tickets_all": 20080.0,
+      "revenue": 0.0,
+      "coverage": 0.07,
+      "cps": 14387.0,
+      "roas": 0.0,
+      "romi": -100.0
+    },
+    {
+      "month": 4,
+      "spend_with_vat": 739470.11,
+      "tickets_sold": 11.0,
+      "tickets_all": 7061.0,
+      "revenue": 0.0,
+      "coverage": 0.16,
+      "cps": 67224.56,
+      "roas": 0.0,
+      "romi": -100.0
+    },
+    {
+      "month": 5,
+      "spend_with_vat": 5711045.67,
+      "tickets_sold": 202.0,
+      "tickets_all": 46079.0,
+      "revenue": 298770.0,
+      "coverage": 0.44,
+      "cps": 28272.5,
+      "roas": 0.05,
+      "romi": -94.77
+    },
+    {
+      "month": 6,
+      "spend_with_vat": 10833694.03,
+      "tickets_sold": 14423.0,
+      "tickets_all": 94424.0,
+      "revenue": 34947460.0,
+      "coverage": 15.27,
+      "cps": 751.14,
+      "roas": 3.23,
+      "romi": 222.58
+    },
+    {
+      "month": 7,
+      "spend_with_vat": 7324218.19,
+      "tickets_sold": 20118.0,
+      "tickets_all": 102919.0,
+      "revenue": 50786100.0,
+      "coverage": 19.55,
+      "cps": 364.06,
+      "roas": 6.93,
+      "romi": 593.4
+    },
+    {
+      "month": 8,
+      "spend_with_vat": 6680208.92,
+      "tickets_sold": 23998.0,
+      "tickets_all": 123993.0,
+      "revenue": 64446700.0,
+      "coverage": 19.35,
+      "cps": 278.37,
+      "roas": 9.65,
+      "romi": 864.74
+    }
+  ],
+  "night": [
+    {
+      "day": 8,
+      "tickets_sold": 1633.0,
+      "returned": 74.0,
+      "net_tickets": 1559.0,
+      "net_revenue": 4150000.0
+    },
+    {
+      "day": 15,
+      "tickets_sold": 1611.0,
+      "returned": 103.0,
+      "net_tickets": 1508.0,
+      "net_revenue": 3960000.0
+    },
+    {
+      "day": 22,
+      "tickets_sold": 2099.0,
+      "returned": 102.0,
+      "net_tickets": 1997.0,
+      "net_revenue": 5077500.0
+    },
+    {
+      "day": 29,
+      "tickets_sold": 2545.0,
+      "returned": 126.0,
+      "net_tickets": 2419.0,
+      "net_revenue": 6127500.0
+    }
+  ],
+  "funnel": [
+    {
+      "label": "Визиты на сайт",
+      "value": 525514
+    },
+    {
+      "label": "Карточка билета",
+      "value": 64787
+    },
+    {
+      "label": "Онлайн-оплаты",
+      "value": 13693
+    }
+  ],
+  "scope": "MarketingOps base_metrics: расход с НДС, Яндекс.Директ; билеты по классификации ParkOps, включая сервисные позиции; CPS и ROMI по атрибутированным продажам"
+}

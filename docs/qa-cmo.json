@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-11",
+  "scenes": 23,
+  "cmoScenes": 9,
+  "sceneViewportThemeChecks": 184,
+  "mobileVariants": 6,
+  "errors": [],
+  "failures": [],
+  "motion": {
+    "sequentialReveal": true,
+    "motionOff": true,
+    "offscreenCancelled": true,
+    "reducedMotion": true,
+    "noJs": true
+  },
+  "dataTests": 7,
+  "physicalVenueScreen": "not tested"
+}
