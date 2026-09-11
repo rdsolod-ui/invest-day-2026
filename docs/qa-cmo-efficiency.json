@@ -1,0 +1,15 @@
+{
+  "date": "2026-09-11",
+  "scope": "marketing-performance: April–September season; September 1–11 partial",
+  "profiles": 8,
+  "mobile": 6,
+  "errors": [],
+  "checks": [
+    "six monthly points on each chart",
+    "negative ROMI below zero",
+    "no overlapping value labels",
+    "motion/off/reduced/no-JS",
+    "season ticket and expense totals reconciled"
+  ],
+  "tests": 10
+}

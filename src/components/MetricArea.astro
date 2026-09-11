@@ -1,17 +1,19 @@
 ---
 interface Props {id:string;name:string;unit:string;values:number[];labels:string[];digits:number;color:number}
 const {id,name,unit,values,labels,digits,color}=Astro.props;
-const max=Math.max(...values)*1.22;const pts=values.map((v,i)=>({x:65+i*310,y:166-v/max*123,v}));
-const line=pts.map((p,i)=>`${i?'L':'M'}${p.x},${p.y}`).join(' ');const area=`${line}L685,166L65,166Z`;
+const min=Math.min(0,...values)*1.5;const max=Math.max(0,...values)*1.22;
+const span=max-min||1;const y=(v:number)=>166-(v-min)/span*123;const zero=y(0);
+const pts=values.map((v,i)=>({x:65+i*620/Math.max(1,values.length-1),y:y(v),v}));
+const line=pts.map((p,i)=>`${i?'L':'M'}${p.x},${p.y}`).join(' ');const area=`${line}L685,${zero}L65,${zero}Z`;
 const fmt=(v:number)=>new Intl.NumberFormat('ru-RU',{minimumFractionDigits:digits,maximumFractionDigits:digits}).format(v);
 ---
 <article class="performance-panel metric-area" style={`--series-color:var(--chart-${color})`}>
 <h3>{name}</h3>
 <svg viewBox="0 0 750 208" role="img" aria-labelledby={`${id}-title ${id}-desc`}>
-<title id={`${id}-title`}>{name}</title><desc id={`${id}-desc`}>{values.map((v,i)=>`${labels[i]}: ${fmt(v)}`).join('; ')}. Шкала от нуля.</desc>
+<title id={`${id}-title`}>{name}</title><desc id={`${id}-desc`}>{values.map((v,i)=>`${labels[i]}: ${fmt(v)}`).join('; ')}. Нулевая линия обозначена; отрицательные значения расположены ниже неё.</desc>
 <defs><linearGradient id={`${id}-fill`} x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="var(--series-color)" stop-opacity=".36"/><stop offset="100%" stop-color="var(--series-color)" stop-opacity=".04"/></linearGradient></defs>
 {[.5,1].map(f=><line class="area-grid" x1="65" x2="685" y1={166-f*123} y2={166-f*123}/>)}
-<line class="area-zero" x1="65" x2="685" y1="166" y2="166"/><text class="area-zero-label" x="36" y="171">0</text>
+<line class="area-zero" x1="65" x2="685" y1={zero} y2={zero}/><text class="area-zero-label" x="36" y={zero+5}>0</text>
 <path d={area} fill={`url(#${id}-fill)`} class="area-fill" data-area/>
 <path d={line} class="area-line" data-draw/>
 {pts.map((p,i)=><g><circle cx={p.x} cy={p.y} r="6" class="area-point"/><text class="area-value" x={p.x} y={p.y-15}>{fmt(p.v)}</text><text class="area-month" x={p.x} y="199">{labels[i]}</text></g>)}

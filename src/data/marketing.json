@@ -82,6 +82,18 @@
       "cps": 278.37,
       "roas": 9.65,
       "romi": 864.74
+    },
+    {
+      "month": 9,
+      "spend_with_vat": 883460.03,
+      "tickets_sold": 2364.0,
+      "tickets_all": 13517.0,
+      "revenue": 5568700.0,
+      "coverage": 17.49,
+      "cps": 373.71,
+      "roas": 6.3,
+      "romi": 530.33,
+      "partial": true
     }
   ],
   "night": [
