@@ -1,0 +1,22 @@
+---
+import data from '../data/night-sales.json';
+const fmt=(v:number)=>new Intl.NumberFormat('ru-RU').format(v);
+const top=Math.ceil(data.total.net_tickets/4000)*4000;
+const x=(day:number)=>76+day/91*920,y=(v:number)=>335-v/top*260;
+let total=0;
+const points=data.daily.map((d,i)=>({day:i,value:total+=d.net_tickets}));
+const line=points.map((p,i)=>`${i?'L':'M'}${x(p.day)},${y(p.value)}`).join(' ');
+const months=[{day:29,label:'Июнь'},{day:60,label:'Июль'},{day:91,label:'Август'}];
+---
+<div class="night-trend">
+ <div class="night-trend-heading"><span>Билеты после возвратов</span><b>01.06–31.08.2026</b></div>
+ <svg viewBox="0 0 1070 405" role="img" aria-labelledby="night-trend-title night-trend-desc">
+  <title id="night-trend-title">Night Riders — продажи накопительным итогом за июнь–август 2026</title><desc id="night-trend-desc">{fmt(data.total.net_tickets)} билетов после возвратов. Ежедневные продажи по дате покупки, все каналы. Подписи — накопленные итоги на конец каждого месяца.</desc>
+  <defs><linearGradient id="night-sales-area" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="var(--lime)" stop-opacity=".34"/><stop offset="100%" stop-color="var(--lime)" stop-opacity=".02"/></linearGradient></defs>
+  {[0,.5,1].map(f=><g><line x1="76" x2="996" y1={y(top*f)} y2={y(top*f)} class="season-grid"/><text x="57" y={y(top*f)+8} text-anchor="end" class="season-axis">{fmt(top*f/1000)}к</text></g>)}
+  <path d={`${line} L996,335 L76,335 Z`} fill="url(#night-sales-area)" data-area/>
+  <path d={line} class="night-sales-line" data-draw/>
+  {months.map(m=><g data-flow><circle cx={x(m.day)} cy={y(points[m.day].value)} r="8" class="night-sales-point"/><text x={x(m.day)} y={y(points[m.day].value)-24} text-anchor="middle" class="night-sales-value">{fmt(points[m.day].value)}</text><text x={x(m.day)} y="382" text-anchor="middle" class="season-axis">{m.label}</text></g>)}
+ </svg>
+ <p>Ежедневные продажи · накопительный итог · онлайн и касса</p>
+</div>

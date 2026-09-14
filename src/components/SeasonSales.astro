@@ -1,22 +1,31 @@
 ---
-import data from '../data/season-sales.json';
-const fmt=(v:number)=>new Intl.NumberFormat('ru-RU').format(v);
-const top=Math.ceil(Math.max(...data.seasons.map(s=>s.total))/100000)*100000;
-const x=(day:number)=>95+day/183*1020,y=(v:number)=>347-v/top*285;
-const series=data.seasons.map(s=>{let total=0;const pts=[{day:0,value:0},...s.daily.map((d,i)=>({day:i+1,value:total+=d.sold}))];return{...s,line:pts.map((p,i)=>`${i?'L':'M'}${x(p.day)},${y(p.value)}`).join(' '),last:pts.at(-1)!}});
-const cutoff=series[1].last.day;const same2025=data.seasons[0].daily.slice(0,cutoff).reduce((a,d)=>a+d.sold,0);const sameGrowth=(series[1].total/same2025-1)*100;
-const ticks=[{day:0,label:'01.04'},{day:30,label:'01.05'},{day:61,label:'01.06'},{day:91,label:'01.07'},{day:122,label:'01.08'},{day:153,label:'01.09'},{day:183,label:'30.09'}];
+import data from '../data/admission-sales.json';
+import events from '../data/season-events.json';
+const fmt=(v:number,d=0)=>new Intl.NumberFormat('ru-RU',{maximumFractionDigits:d,minimumFractionDigits:d}).format(v);
+const dateLabel=(date:string)=>date.slice(8)+'.'+date.slice(5,7);
+const dayOf=(date:string)=>(Date.parse(date)-Date.parse(date.slice(0,4)+'-04-01'))/86400000;
+const top=Math.ceil(Math.max(...data.seasons.map(s=>s.total.tickets_sold))/100000)*100000;
+const x=(day:number)=>88+day/182*1012,y=(v:number)=>365-v/top*300;
+const series=data.seasons.map(s=>{let total=0;const pts=s.daily.map(d=>({day:dayOf(d.date),value:total+=d.tickets_sold}));const line=pts.map((p,i)=>`${i?'L':'M'}${x(p.day)},${y(p.value)}`).join(' ');return{...s,line,area:`${line} L${x(pts.at(-1)!.day)},365 L${x(pts[0].day)},365 Z`,last:pts.at(-1)!}});
+const cutoff=dayOf(data.cutoff),same2025=data.comparison.previous;
+const milestones=events.filter(e=>e.date<=data.cutoff);
+const ticks=['04-01','05-01','06-01','07-01','08-01','09-01','09-30'];
 ---
 <div class="season-sales">
-<div class="season-legend">{series.map(s=><div class={`season-key season-${s.year}`}><span class="season-swatch" aria-hidden="true"></span><div><span>{s.year} · 01.04–{s.year===2025?'30.09':'14.09'}</span><strong>{fmt(s.total)} <small>шт.</small></strong></div></div>)}</div>
-<svg viewBox="0 0 1170 405" role="img" aria-labelledby="season-sales-title season-sales-desc">
-<title id="season-sales-title">Все каналы: проданные билеты накопительным итогом</title><desc id="season-sales-desc">2025: {fmt(series[0].total)} за 1 апреля — 30 сентября. 2026: {fmt(series[1].total)} за 1 апреля — 14 сентября. Разные даты окончания, текущий день неполный.</desc>
-<text x="95" y="29" class="season-axis-caption">тыс. билетов · накопительно</text>
-{[0,.25,.5,.75,1].map(f=><g><line x1="95" x2="1115" y1={y(top*f)} y2={y(top*f)} class="season-grid"/><text x="77" y={y(top*f)+8} text-anchor="end" class="season-axis">{fmt(top*f/1000)}</text></g>)}
-<line x1={x(cutoff)} x2={x(cutoff)} y1="47" y2="347" class="season-cutoff"/><text x={x(cutoff)-12} y="48" text-anchor="end" class="season-cutoff-label">14.09.2026</text>
-<circle cx={x(cutoff)} cy={y(same2025)} r="8" class="season-same-point"/>
-{series.map(s=><g class={`season-${s.year}`}><path d={s.line} class="season-line" data-draw/><circle cx={x(s.last.day)} cy={y(s.last.value)} r="7" class="season-end"/></g>)}
-{[{day:123,label:'01.08 · Dream Riders'},{day:130,label:'08.08 · Night Riders'}].map(m=><g data-flow><circle class="season-milestone" cx={x(m.day)} cy={y(data.seasons[1].daily.slice(0,m.day).reduce((a,d)=>a+d.sold,0))} r="8"><title>{m.label}</title></circle></g>)}
-{ticks.map(t=><text x={x(t.day)} y="387" text-anchor="middle" class="season-axis">{t.label}</text>)}
-</svg><p class="season-chart-note">На 14 сентября: 2025 — {fmt(same2025)} · 2026 — {fmt(series[1].total)} · +{sameGrowth.toFixed(1).replace('.',',')}%.</p>
+ <div class="season-growth" data-reveal><strong>{data.comparison.growthPercent>=0?'+':''}{fmt(data.comparison.growthPercent,1)}<small>%</small></strong><div><b>к тому же периоду 2025</b><span>01.04–{dateLabel(data.cutoff)} · {fmt(same2025)} → {fmt(data.comparison.current)} билетов</span></div></div>
+ <div class="season-legend">{series.map(s=><div class={`season-key season-${s.year}`}><span class="season-swatch" aria-hidden="true"></span><div><span>{s.year} · 01.04–{dateLabel(s.end)}</span><strong>{fmt(s.total.tickets_sold)} <small>шт.</small></strong></div></div>)}</div>
+ <svg viewBox="0 0 1170 430" role="img" aria-labelledby="season-sales-title season-sales-desc">
+  <title id="season-sales-title">Проданные платные билеты и пакеты в парк, накопительным итогом</title>
+  <desc id="season-sales-desc">2025: {fmt(series[0].total.tickets_sold)} за 1 апреля — 30 сентября. 2026: {fmt(series[1].total.tickets_sold)} за 1 апреля — {dateLabel(data.cutoff)}. Рост {fmt(data.comparison.growthPercent,1)} процента за одинаковые даты. Каждый номер на линии соответствует событию в журнале справа. Семейный пакет считается одной проданной единицей.</desc>
+  <defs><linearGradient id="admission-area" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="var(--blue)" stop-opacity=".2"/><stop offset="100%" stop-color="var(--blue)" stop-opacity=".02"/></linearGradient></defs>
+  <text x="88" y="31" class="season-axis-caption">тыс. билетов · накопительно</text>
+  {[0,1/3,2/3,1].map(f=><g><line x1="88" x2="1100" y1={y(top*f)} y2={y(top*f)} class="season-grid"/><text x="72" y={y(top*f)+8} text-anchor="end" class="season-axis">{fmt(top*f/1000)}</text></g>)}
+  <path d={series[1].area} fill="url(#admission-area)" data-area/>
+  <line x1={x(cutoff)} x2={x(cutoff)} y1="48" y2="365" class="season-cutoff"/>
+  <text x={x(cutoff)+12} y="45" text-anchor="middle" class="season-cutoff-label">{dateLabel(data.cutoff)}</text>
+  <circle cx={x(cutoff)} cy={y(same2025)} r="8" class="season-same-point"/>
+  {series.map(s=><g class={`season-${s.year}`}><path d={s.line} class="season-line" data-draw/><circle cx={x(s.last.day)} cy={y(s.last.value)} r="7" class="season-end"/></g>)}
+  {milestones.map(m=>{const day=dayOf(m.date),cy=y(data.seasons[1].daily.filter(d=>d.date<=m.date).reduce((a,d)=>a+d.tickets_sold,0)),cx=x(day),px=cx+m.dx,py=cy+m.dy;return <g class={`season-pin pin-${m.kind}`} data-flow data-event-id={m.id}><title>{m.id}. {dateLabel(m.date)} · {m.title} · {m.detail}</title><path d={`M${cx},${cy} L${px},${py}`} class="pin-leader"/><circle cx={cx} cy={cy} r="6" class="pin-dot"/><circle cx={px} cy={py} r="20" class="pin-badge"/><text x={px} y={py+8} text-anchor="middle" class="pin-number">{m.id}</text></g>})}
+  {ticks.map(d=><text x={x(dayOf('2026-'+d))} y="414" text-anchor="middle" class="season-axis">{dateLabel('2026-'+d)}</text>)}
+ </svg>
 </div>

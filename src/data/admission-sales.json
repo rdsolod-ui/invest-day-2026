@@ -1,0 +1,2134 @@
+{
+  "snapshotAt": "2026-09-14T12:18:02.327Z",
+  "source": "ParkOps / Lime",
+  "methodVersion": "paid-admissions-v1",
+  "cutoff": "2026-09-13",
+  "unit": "Платный билет или пакет; платные льготные включены; семейный пакет — одна единица",
+  "seasons": [
+    {
+      "year": 2025,
+      "start": "2025-04-01",
+      "end": "2025-09-30",
+      "total": {
+        "tickets_sold": 104014,
+        "returned": 1283,
+        "net_tickets": 102731
+      },
+      "daily": [
+        {
+          "date": "2025-04-01",
+          "tickets_sold": 13,
+          "returned": 1,
+          "net_tickets": 12
+        },
+        {
+          "date": "2025-04-02",
+          "tickets_sold": 69,
+          "returned": 0,
+          "net_tickets": 69
+        },
+        {
+          "date": "2025-04-03",
+          "tickets_sold": 108,
+          "returned": 0,
+          "net_tickets": 108
+        },
+        {
+          "date": "2025-04-04",
+          "tickets_sold": 201,
+          "returned": 2,
+          "net_tickets": 199
+        },
+        {
+          "date": "2025-04-05",
+          "tickets_sold": 156,
+          "returned": 0,
+          "net_tickets": 156
+        },
+        {
+          "date": "2025-04-06",
+          "tickets_sold": 7,
+          "returned": 1,
+          "net_tickets": 6
+        },
+        {
+          "date": "2025-04-07",
+          "tickets_sold": 4,
+          "returned": 0,
+          "net_tickets": 4
+        },
+        {
+          "date": "2025-04-08",
+          "tickets_sold": 8,
+          "returned": 2,
+          "net_tickets": 6
+        },
+        {
+          "date": "2025-04-09",
+          "tickets_sold": 11,
+          "returned": 0,
+          "net_tickets": 11
+        },
+        {
+          "date": "2025-04-10",
+          "tickets_sold": 24,
+          "returned": 0,
+          "net_tickets": 24
+        },
+        {
+          "date": "2025-04-11",
+          "tickets_sold": 18,
+          "returned": 2,
+          "net_tickets": 16
+        },
+        {
+          "date": "2025-04-12",
+          "tickets_sold": 66,
+          "returned": 2,
+          "net_tickets": 64
+        },
+        {
+          "date": "2025-04-13",
+          "tickets_sold": 183,
+          "returned": 3,
+          "net_tickets": 180
+        },
+        {
+          "date": "2025-04-14",
+          "tickets_sold": 55,
+          "returned": 0,
+          "net_tickets": 55
+        },
+        {
+          "date": "2025-04-15",
+          "tickets_sold": 123,
+          "returned": 0,
+          "net_tickets": 123
+        },
+        {
+          "date": "2025-04-16",
+          "tickets_sold": 194,
+          "returned": 1,
+          "net_tickets": 193
+        },
+        {
+          "date": "2025-04-17",
+          "tickets_sold": 116,
+          "returned": 2,
+          "net_tickets": 114
+        },
+        {
+          "date": "2025-04-18",
+          "tickets_sold": 251,
+          "returned": 3,
+          "net_tickets": 248
+        },
+        {
+          "date": "2025-04-19",
+          "tickets_sold": 1331,
+          "returned": 21,
+          "net_tickets": 1310
+        },
+        {
+          "date": "2025-04-20",
+          "tickets_sold": 1559,
+          "returned": 9,
+          "net_tickets": 1550
+        },
+        {
+          "date": "2025-04-21",
+          "tickets_sold": 298,
+          "returned": 3,
+          "net_tickets": 295
+        },
+        {
+          "date": "2025-04-22",
+          "tickets_sold": 261,
+          "returned": 4,
+          "net_tickets": 257
+        },
+        {
+          "date": "2025-04-23",
+          "tickets_sold": 278,
+          "returned": 1,
+          "net_tickets": 277
+        },
+        {
+          "date": "2025-04-24",
+          "tickets_sold": 204,
+          "returned": 2,
+          "net_tickets": 202
+        },
+        {
+          "date": "2025-04-25",
+          "tickets_sold": 107,
+          "returned": 2,
+          "net_tickets": 105
+        },
+        {
+          "date": "2025-04-26",
+          "tickets_sold": 168,
+          "returned": 0,
+          "net_tickets": 168
+        },
+        {
+          "date": "2025-04-27",
+          "tickets_sold": 88,
+          "returned": 2,
+          "net_tickets": 86
+        },
+        {
+          "date": "2025-04-28",
+          "tickets_sold": 77,
+          "returned": 1,
+          "net_tickets": 76
+        },
+        {
+          "date": "2025-04-29",
+          "tickets_sold": 19,
+          "returned": 3,
+          "net_tickets": 16
+        },
+        {
+          "date": "2025-04-30",
+          "tickets_sold": 60,
+          "returned": 1,
+          "net_tickets": 59
+        },
+        {
+          "date": "2025-05-01",
+          "tickets_sold": 10,
+          "returned": 0,
+          "net_tickets": 10
+        },
+        {
+          "date": "2025-05-02",
+          "tickets_sold": 54,
+          "returned": 2,
+          "net_tickets": 52
+        },
+        {
+          "date": "2025-05-03",
+          "tickets_sold": 263,
+          "returned": 2,
+          "net_tickets": 261
+        },
+        {
+          "date": "2025-05-04",
+          "tickets_sold": 478,
+          "returned": 13,
+          "net_tickets": 465
+        },
+        {
+          "date": "2025-05-05",
+          "tickets_sold": 111,
+          "returned": 1,
+          "net_tickets": 110
+        },
+        {
+          "date": "2025-05-06",
+          "tickets_sold": 183,
+          "returned": 0,
+          "net_tickets": 183
+        },
+        {
+          "date": "2025-05-07",
+          "tickets_sold": 176,
+          "returned": 3,
+          "net_tickets": 173
+        },
+        {
+          "date": "2025-05-08",
+          "tickets_sold": 482,
+          "returned": 5,
+          "net_tickets": 477
+        },
+        {
+          "date": "2025-05-09",
+          "tickets_sold": 349,
+          "returned": 4,
+          "net_tickets": 345
+        },
+        {
+          "date": "2025-05-10",
+          "tickets_sold": 507,
+          "returned": 4,
+          "net_tickets": 503
+        },
+        {
+          "date": "2025-05-11",
+          "tickets_sold": 69,
+          "returned": 0,
+          "net_tickets": 69
+        },
+        {
+          "date": "2025-05-12",
+          "tickets_sold": 23,
+          "returned": 0,
+          "net_tickets": 23
+        },
+        {
+          "date": "2025-05-13",
+          "tickets_sold": 49,
+          "returned": 32,
+          "net_tickets": 17
+        },
+        {
+          "date": "2025-05-14",
+          "tickets_sold": 45,
+          "returned": 0,
+          "net_tickets": 45
+        },
+        {
+          "date": "2025-05-15",
+          "tickets_sold": 188,
+          "returned": 0,
+          "net_tickets": 188
+        },
+        {
+          "date": "2025-05-16",
+          "tickets_sold": 276,
+          "returned": 1,
+          "net_tickets": 275
+        },
+        {
+          "date": "2025-05-17",
+          "tickets_sold": 1101,
+          "returned": 9,
+          "net_tickets": 1092
+        },
+        {
+          "date": "2025-05-18",
+          "tickets_sold": 466,
+          "returned": 12,
+          "net_tickets": 454
+        },
+        {
+          "date": "2025-05-19",
+          "tickets_sold": 68,
+          "returned": 2,
+          "net_tickets": 66
+        },
+        {
+          "date": "2025-05-20",
+          "tickets_sold": 103,
+          "returned": 2,
+          "net_tickets": 101
+        },
+        {
+          "date": "2025-05-21",
+          "tickets_sold": 302,
+          "returned": 2,
+          "net_tickets": 300
+        },
+        {
+          "date": "2025-05-22",
+          "tickets_sold": 1053,
+          "returned": 32,
+          "net_tickets": 1021
+        },
+        {
+          "date": "2025-05-23",
+          "tickets_sold": 499,
+          "returned": 7,
+          "net_tickets": 492
+        },
+        {
+          "date": "2025-05-24",
+          "tickets_sold": 1947,
+          "returned": 22,
+          "net_tickets": 1925
+        },
+        {
+          "date": "2025-05-25",
+          "tickets_sold": 1747,
+          "returned": 11,
+          "net_tickets": 1736
+        },
+        {
+          "date": "2025-05-26",
+          "tickets_sold": 528,
+          "returned": 7,
+          "net_tickets": 521
+        },
+        {
+          "date": "2025-05-27",
+          "tickets_sold": 652,
+          "returned": 5,
+          "net_tickets": 647
+        },
+        {
+          "date": "2025-05-28",
+          "tickets_sold": 786,
+          "returned": 20,
+          "net_tickets": 766
+        },
+        {
+          "date": "2025-05-29",
+          "tickets_sold": 667,
+          "returned": 13,
+          "net_tickets": 654
+        },
+        {
+          "date": "2025-05-30",
+          "tickets_sold": 592,
+          "returned": 6,
+          "net_tickets": 586
+        },
+        {
+          "date": "2025-05-31",
+          "tickets_sold": 1361,
+          "returned": 23,
+          "net_tickets": 1338
+        },
+        {
+          "date": "2025-06-01",
+          "tickets_sold": 2384,
+          "returned": 40,
+          "net_tickets": 2344
+        },
+        {
+          "date": "2025-06-02",
+          "tickets_sold": 768,
+          "returned": 8,
+          "net_tickets": 760
+        },
+        {
+          "date": "2025-06-03",
+          "tickets_sold": 655,
+          "returned": 7,
+          "net_tickets": 648
+        },
+        {
+          "date": "2025-06-04",
+          "tickets_sold": 646,
+          "returned": 8,
+          "net_tickets": 638
+        },
+        {
+          "date": "2025-06-05",
+          "tickets_sold": 753,
+          "returned": 4,
+          "net_tickets": 749
+        },
+        {
+          "date": "2025-06-06",
+          "tickets_sold": 666,
+          "returned": 7,
+          "net_tickets": 659
+        },
+        {
+          "date": "2025-06-07",
+          "tickets_sold": 1494,
+          "returned": 14,
+          "net_tickets": 1480
+        },
+        {
+          "date": "2025-06-08",
+          "tickets_sold": 782,
+          "returned": 23,
+          "net_tickets": 759
+        },
+        {
+          "date": "2025-06-09",
+          "tickets_sold": 507,
+          "returned": 7,
+          "net_tickets": 500
+        },
+        {
+          "date": "2025-06-10",
+          "tickets_sold": 725,
+          "returned": 4,
+          "net_tickets": 721
+        },
+        {
+          "date": "2025-06-11",
+          "tickets_sold": 720,
+          "returned": 4,
+          "net_tickets": 716
+        },
+        {
+          "date": "2025-06-12",
+          "tickets_sold": 1775,
+          "returned": 31,
+          "net_tickets": 1744
+        },
+        {
+          "date": "2025-06-13",
+          "tickets_sold": 362,
+          "returned": 14,
+          "net_tickets": 348
+        },
+        {
+          "date": "2025-06-14",
+          "tickets_sold": 100,
+          "returned": 1,
+          "net_tickets": 99
+        },
+        {
+          "date": "2025-06-15",
+          "tickets_sold": 259,
+          "returned": 3,
+          "net_tickets": 256
+        },
+        {
+          "date": "2025-06-16",
+          "tickets_sold": 898,
+          "returned": 11,
+          "net_tickets": 887
+        },
+        {
+          "date": "2025-06-17",
+          "tickets_sold": 473,
+          "returned": 9,
+          "net_tickets": 464
+        },
+        {
+          "date": "2025-06-18",
+          "tickets_sold": 98,
+          "returned": 1,
+          "net_tickets": 97
+        },
+        {
+          "date": "2025-06-19",
+          "tickets_sold": 79,
+          "returned": 0,
+          "net_tickets": 79
+        },
+        {
+          "date": "2025-06-20",
+          "tickets_sold": 42,
+          "returned": 1,
+          "net_tickets": 41
+        },
+        {
+          "date": "2025-06-21",
+          "tickets_sold": 744,
+          "returned": 7,
+          "net_tickets": 737
+        },
+        {
+          "date": "2025-06-22",
+          "tickets_sold": 186,
+          "returned": 2,
+          "net_tickets": 184
+        },
+        {
+          "date": "2025-06-23",
+          "tickets_sold": 528,
+          "returned": 2,
+          "net_tickets": 526
+        },
+        {
+          "date": "2025-06-24",
+          "tickets_sold": 484,
+          "returned": 7,
+          "net_tickets": 477
+        },
+        {
+          "date": "2025-06-25",
+          "tickets_sold": 216,
+          "returned": 6,
+          "net_tickets": 210
+        },
+        {
+          "date": "2025-06-26",
+          "tickets_sold": 228,
+          "returned": 2,
+          "net_tickets": 226
+        },
+        {
+          "date": "2025-06-27",
+          "tickets_sold": 578,
+          "returned": 12,
+          "net_tickets": 566
+        },
+        {
+          "date": "2025-06-28",
+          "tickets_sold": 1617,
+          "returned": 10,
+          "net_tickets": 1607
+        },
+        {
+          "date": "2025-06-29",
+          "tickets_sold": 495,
+          "returned": 13,
+          "net_tickets": 482
+        },
+        {
+          "date": "2025-06-30",
+          "tickets_sold": 121,
+          "returned": 1,
+          "net_tickets": 120
+        },
+        {
+          "date": "2025-07-01",
+          "tickets_sold": 39,
+          "returned": 0,
+          "net_tickets": 39
+        },
+        {
+          "date": "2025-07-02",
+          "tickets_sold": 236,
+          "returned": 2,
+          "net_tickets": 234
+        },
+        {
+          "date": "2025-07-03",
+          "tickets_sold": 1125,
+          "returned": 15,
+          "net_tickets": 1110
+        },
+        {
+          "date": "2025-07-04",
+          "tickets_sold": 861,
+          "returned": 7,
+          "net_tickets": 854
+        },
+        {
+          "date": "2025-07-05",
+          "tickets_sold": 969,
+          "returned": 10,
+          "net_tickets": 959
+        },
+        {
+          "date": "2025-07-06",
+          "tickets_sold": 1260,
+          "returned": 10,
+          "net_tickets": 1250
+        },
+        {
+          "date": "2025-07-07",
+          "tickets_sold": 968,
+          "returned": 3,
+          "net_tickets": 965
+        },
+        {
+          "date": "2025-07-08",
+          "tickets_sold": 793,
+          "returned": 16,
+          "net_tickets": 777
+        },
+        {
+          "date": "2025-07-09",
+          "tickets_sold": 706,
+          "returned": 4,
+          "net_tickets": 702
+        },
+        {
+          "date": "2025-07-10",
+          "tickets_sold": 640,
+          "returned": 9,
+          "net_tickets": 631
+        },
+        {
+          "date": "2025-07-11",
+          "tickets_sold": 558,
+          "returned": 4,
+          "net_tickets": 554
+        },
+        {
+          "date": "2025-07-12",
+          "tickets_sold": 826,
+          "returned": 19,
+          "net_tickets": 807
+        },
+        {
+          "date": "2025-07-13",
+          "tickets_sold": 970,
+          "returned": 8,
+          "net_tickets": 962
+        },
+        {
+          "date": "2025-07-14",
+          "tickets_sold": 462,
+          "returned": 6,
+          "net_tickets": 456
+        },
+        {
+          "date": "2025-07-15",
+          "tickets_sold": 201,
+          "returned": 5,
+          "net_tickets": 196
+        },
+        {
+          "date": "2025-07-16",
+          "tickets_sold": 311,
+          "returned": 3,
+          "net_tickets": 308
+        },
+        {
+          "date": "2025-07-17",
+          "tickets_sold": 492,
+          "returned": 12,
+          "net_tickets": 480
+        },
+        {
+          "date": "2025-07-18",
+          "tickets_sold": 1162,
+          "returned": 9,
+          "net_tickets": 1153
+        },
+        {
+          "date": "2025-07-19",
+          "tickets_sold": 1208,
+          "returned": 17,
+          "net_tickets": 1191
+        },
+        {
+          "date": "2025-07-20",
+          "tickets_sold": 701,
+          "returned": 5,
+          "net_tickets": 696
+        },
+        {
+          "date": "2025-07-21",
+          "tickets_sold": 73,
+          "returned": 1,
+          "net_tickets": 72
+        },
+        {
+          "date": "2025-07-22",
+          "tickets_sold": 339,
+          "returned": 1,
+          "net_tickets": 338
+        },
+        {
+          "date": "2025-07-23",
+          "tickets_sold": 520,
+          "returned": 8,
+          "net_tickets": 512
+        },
+        {
+          "date": "2025-07-24",
+          "tickets_sold": 860,
+          "returned": 8,
+          "net_tickets": 852
+        },
+        {
+          "date": "2025-07-25",
+          "tickets_sold": 1037,
+          "returned": 10,
+          "net_tickets": 1027
+        },
+        {
+          "date": "2025-07-26",
+          "tickets_sold": 1988,
+          "returned": 20,
+          "net_tickets": 1968
+        },
+        {
+          "date": "2025-07-27",
+          "tickets_sold": 1824,
+          "returned": 21,
+          "net_tickets": 1803
+        },
+        {
+          "date": "2025-07-28",
+          "tickets_sold": 916,
+          "returned": 10,
+          "net_tickets": 906
+        },
+        {
+          "date": "2025-07-29",
+          "tickets_sold": 908,
+          "returned": 10,
+          "net_tickets": 898
+        },
+        {
+          "date": "2025-07-30",
+          "tickets_sold": 869,
+          "returned": 8,
+          "net_tickets": 861
+        },
+        {
+          "date": "2025-07-31",
+          "tickets_sold": 918,
+          "returned": 8,
+          "net_tickets": 910
+        },
+        {
+          "date": "2025-08-01",
+          "tickets_sold": 303,
+          "returned": 2,
+          "net_tickets": 301
+        },
+        {
+          "date": "2025-08-02",
+          "tickets_sold": 1089,
+          "returned": 11,
+          "net_tickets": 1078
+        },
+        {
+          "date": "2025-08-03",
+          "tickets_sold": 1701,
+          "returned": 26,
+          "net_tickets": 1675
+        },
+        {
+          "date": "2025-08-04",
+          "tickets_sold": 52,
+          "returned": 0,
+          "net_tickets": 52
+        },
+        {
+          "date": "2025-08-05",
+          "tickets_sold": 262,
+          "returned": 5,
+          "net_tickets": 257
+        },
+        {
+          "date": "2025-08-06",
+          "tickets_sold": 1428,
+          "returned": 10,
+          "net_tickets": 1418
+        },
+        {
+          "date": "2025-08-07",
+          "tickets_sold": 381,
+          "returned": 2,
+          "net_tickets": 379
+        },
+        {
+          "date": "2025-08-08",
+          "tickets_sold": 1039,
+          "returned": 7,
+          "net_tickets": 1032
+        },
+        {
+          "date": "2025-08-09",
+          "tickets_sold": 608,
+          "returned": 20,
+          "net_tickets": 588
+        },
+        {
+          "date": "2025-08-10",
+          "tickets_sold": 1740,
+          "returned": 15,
+          "net_tickets": 1725
+        },
+        {
+          "date": "2025-08-11",
+          "tickets_sold": 210,
+          "returned": 3,
+          "net_tickets": 207
+        },
+        {
+          "date": "2025-08-12",
+          "tickets_sold": 372,
+          "returned": 5,
+          "net_tickets": 367
+        },
+        {
+          "date": "2025-08-13",
+          "tickets_sold": 1025,
+          "returned": 16,
+          "net_tickets": 1009
+        },
+        {
+          "date": "2025-08-14",
+          "tickets_sold": 482,
+          "returned": 10,
+          "net_tickets": 472
+        },
+        {
+          "date": "2025-08-15",
+          "tickets_sold": 1361,
+          "returned": 21,
+          "net_tickets": 1340
+        },
+        {
+          "date": "2025-08-16",
+          "tickets_sold": 2061,
+          "returned": 25,
+          "net_tickets": 2036
+        },
+        {
+          "date": "2025-08-17",
+          "tickets_sold": 1356,
+          "returned": 13,
+          "net_tickets": 1343
+        },
+        {
+          "date": "2025-08-18",
+          "tickets_sold": 357,
+          "returned": 6,
+          "net_tickets": 351
+        },
+        {
+          "date": "2025-08-19",
+          "tickets_sold": 643,
+          "returned": 9,
+          "net_tickets": 634
+        },
+        {
+          "date": "2025-08-20",
+          "tickets_sold": 575,
+          "returned": 10,
+          "net_tickets": 565
+        },
+        {
+          "date": "2025-08-21",
+          "tickets_sold": 231,
+          "returned": 5,
+          "net_tickets": 226
+        },
+        {
+          "date": "2025-08-22",
+          "tickets_sold": 493,
+          "returned": 7,
+          "net_tickets": 486
+        },
+        {
+          "date": "2025-08-23",
+          "tickets_sold": 661,
+          "returned": 8,
+          "net_tickets": 653
+        },
+        {
+          "date": "2025-08-24",
+          "tickets_sold": 1011,
+          "returned": 12,
+          "net_tickets": 999
+        },
+        {
+          "date": "2025-08-25",
+          "tickets_sold": 341,
+          "returned": 7,
+          "net_tickets": 334
+        },
+        {
+          "date": "2025-08-26",
+          "tickets_sold": 204,
+          "returned": 2,
+          "net_tickets": 202
+        },
+        {
+          "date": "2025-08-27",
+          "tickets_sold": 522,
+          "returned": 10,
+          "net_tickets": 512
+        },
+        {
+          "date": "2025-08-28",
+          "tickets_sold": 747,
+          "returned": 7,
+          "net_tickets": 740
+        },
+        {
+          "date": "2025-08-29",
+          "tickets_sold": 264,
+          "returned": 5,
+          "net_tickets": 259
+        },
+        {
+          "date": "2025-08-30",
+          "tickets_sold": 2541,
+          "returned": 31,
+          "net_tickets": 2510
+        },
+        {
+          "date": "2025-08-31",
+          "tickets_sold": 2096,
+          "returned": 24,
+          "net_tickets": 2072
+        },
+        {
+          "date": "2025-09-01",
+          "tickets_sold": 1296,
+          "returned": 10,
+          "net_tickets": 1286
+        },
+        {
+          "date": "2025-09-02",
+          "tickets_sold": 108,
+          "returned": 0,
+          "net_tickets": 108
+        },
+        {
+          "date": "2025-09-03",
+          "tickets_sold": 161,
+          "returned": 1,
+          "net_tickets": 160
+        },
+        {
+          "date": "2025-09-04",
+          "tickets_sold": 171,
+          "returned": 2,
+          "net_tickets": 169
+        },
+        {
+          "date": "2025-09-05",
+          "tickets_sold": 312,
+          "returned": 1,
+          "net_tickets": 311
+        },
+        {
+          "date": "2025-09-06",
+          "tickets_sold": 1833,
+          "returned": 12,
+          "net_tickets": 1821
+        },
+        {
+          "date": "2025-09-07",
+          "tickets_sold": 1533,
+          "returned": 10,
+          "net_tickets": 1523
+        },
+        {
+          "date": "2025-09-08",
+          "tickets_sold": 226,
+          "returned": 2,
+          "net_tickets": 224
+        },
+        {
+          "date": "2025-09-09",
+          "tickets_sold": 249,
+          "returned": 1,
+          "net_tickets": 248
+        },
+        {
+          "date": "2025-09-10",
+          "tickets_sold": 269,
+          "returned": 3,
+          "net_tickets": 266
+        },
+        {
+          "date": "2025-09-11",
+          "tickets_sold": 272,
+          "returned": 0,
+          "net_tickets": 272
+        },
+        {
+          "date": "2025-09-12",
+          "tickets_sold": 312,
+          "returned": 4,
+          "net_tickets": 308
+        },
+        {
+          "date": "2025-09-13",
+          "tickets_sold": 1296,
+          "returned": 14,
+          "net_tickets": 1282
+        },
+        {
+          "date": "2025-09-14",
+          "tickets_sold": 1283,
+          "returned": 14,
+          "net_tickets": 1269
+        },
+        {
+          "date": "2025-09-15",
+          "tickets_sold": 224,
+          "returned": 3,
+          "net_tickets": 221
+        },
+        {
+          "date": "2025-09-16",
+          "tickets_sold": 220,
+          "returned": 4,
+          "net_tickets": 216
+        },
+        {
+          "date": "2025-09-17",
+          "tickets_sold": 148,
+          "returned": 2,
+          "net_tickets": 146
+        },
+        {
+          "date": "2025-09-18",
+          "tickets_sold": 139,
+          "returned": 1,
+          "net_tickets": 138
+        },
+        {
+          "date": "2025-09-19",
+          "tickets_sold": 57,
+          "returned": 1,
+          "net_tickets": 56
+        },
+        {
+          "date": "2025-09-20",
+          "tickets_sold": 438,
+          "returned": 8,
+          "net_tickets": 430
+        },
+        {
+          "date": "2025-09-21",
+          "tickets_sold": 1063,
+          "returned": 6,
+          "net_tickets": 1057
+        },
+        {
+          "date": "2025-09-22",
+          "tickets_sold": 480,
+          "returned": 7,
+          "net_tickets": 473
+        },
+        {
+          "date": "2025-09-23",
+          "tickets_sold": 37,
+          "returned": 2,
+          "net_tickets": 35
+        },
+        {
+          "date": "2025-09-24",
+          "tickets_sold": 19,
+          "returned": 0,
+          "net_tickets": 19
+        },
+        {
+          "date": "2025-09-25",
+          "tickets_sold": 47,
+          "returned": 1,
+          "net_tickets": 46
+        },
+        {
+          "date": "2025-09-26",
+          "tickets_sold": 52,
+          "returned": 0,
+          "net_tickets": 52
+        },
+        {
+          "date": "2025-09-27",
+          "tickets_sold": 85,
+          "returned": 4,
+          "net_tickets": 81
+        },
+        {
+          "date": "2025-09-28",
+          "tickets_sold": 154,
+          "returned": 0,
+          "net_tickets": 154
+        },
+        {
+          "date": "2025-09-29",
+          "tickets_sold": 18,
+          "returned": 0,
+          "net_tickets": 18
+        },
+        {
+          "date": "2025-09-30",
+          "tickets_sold": 41,
+          "returned": 0,
+          "net_tickets": 41
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "start": "2026-04-01",
+      "end": "2026-09-13",
+      "total": {
+        "tickets_sold": 260997,
+        "returned": 3009,
+        "net_tickets": 257988
+      },
+      "daily": [
+        {
+          "date": "2026-04-01",
+          "tickets_sold": 383,
+          "returned": 10,
+          "net_tickets": 373
+        },
+        {
+          "date": "2026-04-02",
+          "tickets_sold": 87,
+          "returned": 8,
+          "net_tickets": 79
+        },
+        {
+          "date": "2026-04-03",
+          "tickets_sold": 485,
+          "returned": 19,
+          "net_tickets": 466
+        },
+        {
+          "date": "2026-04-04",
+          "tickets_sold": 737,
+          "returned": 14,
+          "net_tickets": 723
+        },
+        {
+          "date": "2026-04-05",
+          "tickets_sold": 41,
+          "returned": 0,
+          "net_tickets": 41
+        },
+        {
+          "date": "2026-04-06",
+          "tickets_sold": 22,
+          "returned": 4,
+          "net_tickets": 18
+        },
+        {
+          "date": "2026-04-07",
+          "tickets_sold": 63,
+          "returned": 2,
+          "net_tickets": 61
+        },
+        {
+          "date": "2026-04-08",
+          "tickets_sold": 23,
+          "returned": 1,
+          "net_tickets": 22
+        },
+        {
+          "date": "2026-04-09",
+          "tickets_sold": 5,
+          "returned": 0,
+          "net_tickets": 5
+        },
+        {
+          "date": "2026-04-10",
+          "tickets_sold": 9,
+          "returned": 3,
+          "net_tickets": 6
+        },
+        {
+          "date": "2026-04-11",
+          "tickets_sold": 11,
+          "returned": 0,
+          "net_tickets": 11
+        },
+        {
+          "date": "2026-04-12",
+          "tickets_sold": 147,
+          "returned": 2,
+          "net_tickets": 145
+        },
+        {
+          "date": "2026-04-13",
+          "tickets_sold": 97,
+          "returned": 3,
+          "net_tickets": 94
+        },
+        {
+          "date": "2026-04-14",
+          "tickets_sold": 49,
+          "returned": 0,
+          "net_tickets": 49
+        },
+        {
+          "date": "2026-04-15",
+          "tickets_sold": 26,
+          "returned": 3,
+          "net_tickets": 23
+        },
+        {
+          "date": "2026-04-16",
+          "tickets_sold": 70,
+          "returned": 3,
+          "net_tickets": 67
+        },
+        {
+          "date": "2026-04-17",
+          "tickets_sold": 167,
+          "returned": 3,
+          "net_tickets": 164
+        },
+        {
+          "date": "2026-04-18",
+          "tickets_sold": 101,
+          "returned": 1,
+          "net_tickets": 100
+        },
+        {
+          "date": "2026-04-19",
+          "tickets_sold": 71,
+          "returned": 1,
+          "net_tickets": 70
+        },
+        {
+          "date": "2026-04-20",
+          "tickets_sold": 24,
+          "returned": 0,
+          "net_tickets": 24
+        },
+        {
+          "date": "2026-04-21",
+          "tickets_sold": 50,
+          "returned": 1,
+          "net_tickets": 49
+        },
+        {
+          "date": "2026-04-22",
+          "tickets_sold": 206,
+          "returned": 3,
+          "net_tickets": 203
+        },
+        {
+          "date": "2026-04-23",
+          "tickets_sold": 4,
+          "returned": 0,
+          "net_tickets": 4
+        },
+        {
+          "date": "2026-04-24",
+          "tickets_sold": 33,
+          "returned": 0,
+          "net_tickets": 33
+        },
+        {
+          "date": "2026-04-25",
+          "tickets_sold": 311,
+          "returned": 4,
+          "net_tickets": 307
+        },
+        {
+          "date": "2026-04-26",
+          "tickets_sold": 34,
+          "returned": 2,
+          "net_tickets": 32
+        },
+        {
+          "date": "2026-04-27",
+          "tickets_sold": 4,
+          "returned": 0,
+          "net_tickets": 4
+        },
+        {
+          "date": "2026-04-28",
+          "tickets_sold": 1,
+          "returned": 0,
+          "net_tickets": 1
+        },
+        {
+          "date": "2026-04-29",
+          "tickets_sold": 11,
+          "returned": 1,
+          "net_tickets": 10
+        },
+        {
+          "date": "2026-04-30",
+          "tickets_sold": 50,
+          "returned": 0,
+          "net_tickets": 50
+        },
+        {
+          "date": "2026-05-01",
+          "tickets_sold": 157,
+          "returned": 3,
+          "net_tickets": 154
+        },
+        {
+          "date": "2026-05-02",
+          "tickets_sold": 709,
+          "returned": 3,
+          "net_tickets": 706
+        },
+        {
+          "date": "2026-05-03",
+          "tickets_sold": 1487,
+          "returned": 19,
+          "net_tickets": 1468
+        },
+        {
+          "date": "2026-05-04",
+          "tickets_sold": 766,
+          "returned": 10,
+          "net_tickets": 756
+        },
+        {
+          "date": "2026-05-05",
+          "tickets_sold": 713,
+          "returned": 16,
+          "net_tickets": 697
+        },
+        {
+          "date": "2026-05-06",
+          "tickets_sold": 742,
+          "returned": 9,
+          "net_tickets": 733
+        },
+        {
+          "date": "2026-05-07",
+          "tickets_sold": 668,
+          "returned": 12,
+          "net_tickets": 656
+        },
+        {
+          "date": "2026-05-08",
+          "tickets_sold": 151,
+          "returned": 5,
+          "net_tickets": 146
+        },
+        {
+          "date": "2026-05-09",
+          "tickets_sold": 247,
+          "returned": 4,
+          "net_tickets": 243
+        },
+        {
+          "date": "2026-05-10",
+          "tickets_sold": 287,
+          "returned": 1,
+          "net_tickets": 286
+        },
+        {
+          "date": "2026-05-11",
+          "tickets_sold": 159,
+          "returned": 11,
+          "net_tickets": 148
+        },
+        {
+          "date": "2026-05-12",
+          "tickets_sold": 96,
+          "returned": 6,
+          "net_tickets": 90
+        },
+        {
+          "date": "2026-05-13",
+          "tickets_sold": 413,
+          "returned": 5,
+          "net_tickets": 408
+        },
+        {
+          "date": "2026-05-14",
+          "tickets_sold": 477,
+          "returned": 9,
+          "net_tickets": 468
+        },
+        {
+          "date": "2026-05-15",
+          "tickets_sold": 608,
+          "returned": 18,
+          "net_tickets": 590
+        },
+        {
+          "date": "2026-05-16",
+          "tickets_sold": 2662,
+          "returned": 25,
+          "net_tickets": 2637
+        },
+        {
+          "date": "2026-05-17",
+          "tickets_sold": 2417,
+          "returned": 21,
+          "net_tickets": 2396
+        },
+        {
+          "date": "2026-05-18",
+          "tickets_sold": 996,
+          "returned": 6,
+          "net_tickets": 990
+        },
+        {
+          "date": "2026-05-19",
+          "tickets_sold": 850,
+          "returned": 5,
+          "net_tickets": 845
+        },
+        {
+          "date": "2026-05-20",
+          "tickets_sold": 1038,
+          "returned": 8,
+          "net_tickets": 1030
+        },
+        {
+          "date": "2026-05-21",
+          "tickets_sold": 1306,
+          "returned": 28,
+          "net_tickets": 1278
+        },
+        {
+          "date": "2026-05-22",
+          "tickets_sold": 1357,
+          "returned": 9,
+          "net_tickets": 1348
+        },
+        {
+          "date": "2026-05-23",
+          "tickets_sold": 3148,
+          "returned": 61,
+          "net_tickets": 3087
+        },
+        {
+          "date": "2026-05-24",
+          "tickets_sold": 2377,
+          "returned": 17,
+          "net_tickets": 2360
+        },
+        {
+          "date": "2026-05-25",
+          "tickets_sold": 807,
+          "returned": 24,
+          "net_tickets": 783
+        },
+        {
+          "date": "2026-05-26",
+          "tickets_sold": 291,
+          "returned": 4,
+          "net_tickets": 287
+        },
+        {
+          "date": "2026-05-27",
+          "tickets_sold": 487,
+          "returned": 7,
+          "net_tickets": 480
+        },
+        {
+          "date": "2026-05-28",
+          "tickets_sold": 242,
+          "returned": 1,
+          "net_tickets": 241
+        },
+        {
+          "date": "2026-05-29",
+          "tickets_sold": 68,
+          "returned": 0,
+          "net_tickets": 68
+        },
+        {
+          "date": "2026-05-30",
+          "tickets_sold": 547,
+          "returned": 9,
+          "net_tickets": 538
+        },
+        {
+          "date": "2026-05-31",
+          "tickets_sold": 1117,
+          "returned": 5,
+          "net_tickets": 1112
+        },
+        {
+          "date": "2026-06-01",
+          "tickets_sold": 3006,
+          "returned": 50,
+          "net_tickets": 2956
+        },
+        {
+          "date": "2026-06-02",
+          "tickets_sold": 1648,
+          "returned": 19,
+          "net_tickets": 1629
+        },
+        {
+          "date": "2026-06-03",
+          "tickets_sold": 2134,
+          "returned": 11,
+          "net_tickets": 2123
+        },
+        {
+          "date": "2026-06-04",
+          "tickets_sold": 1988,
+          "returned": 26,
+          "net_tickets": 1962
+        },
+        {
+          "date": "2026-06-05",
+          "tickets_sold": 2205,
+          "returned": 19,
+          "net_tickets": 2186
+        },
+        {
+          "date": "2026-06-06",
+          "tickets_sold": 3807,
+          "returned": 43,
+          "net_tickets": 3764
+        },
+        {
+          "date": "2026-06-07",
+          "tickets_sold": 3456,
+          "returned": 57,
+          "net_tickets": 3399
+        },
+        {
+          "date": "2026-06-08",
+          "tickets_sold": 2287,
+          "returned": 15,
+          "net_tickets": 2272
+        },
+        {
+          "date": "2026-06-09",
+          "tickets_sold": 2076,
+          "returned": 21,
+          "net_tickets": 2055
+        },
+        {
+          "date": "2026-06-10",
+          "tickets_sold": 2341,
+          "returned": 24,
+          "net_tickets": 2317
+        },
+        {
+          "date": "2026-06-11",
+          "tickets_sold": 2469,
+          "returned": 21,
+          "net_tickets": 2448
+        },
+        {
+          "date": "2026-06-12",
+          "tickets_sold": 2063,
+          "returned": 102,
+          "net_tickets": 1961
+        },
+        {
+          "date": "2026-06-13",
+          "tickets_sold": 1867,
+          "returned": 49,
+          "net_tickets": 1818
+        },
+        {
+          "date": "2026-06-14",
+          "tickets_sold": 650,
+          "returned": 14,
+          "net_tickets": 636
+        },
+        {
+          "date": "2026-06-15",
+          "tickets_sold": 564,
+          "returned": 9,
+          "net_tickets": 555
+        },
+        {
+          "date": "2026-06-16",
+          "tickets_sold": 265,
+          "returned": 3,
+          "net_tickets": 262
+        },
+        {
+          "date": "2026-06-17",
+          "tickets_sold": 647,
+          "returned": 3,
+          "net_tickets": 644
+        },
+        {
+          "date": "2026-06-18",
+          "tickets_sold": 334,
+          "returned": 2,
+          "net_tickets": 332
+        },
+        {
+          "date": "2026-06-19",
+          "tickets_sold": 1300,
+          "returned": 8,
+          "net_tickets": 1292
+        },
+        {
+          "date": "2026-06-20",
+          "tickets_sold": 2968,
+          "returned": 28,
+          "net_tickets": 2940
+        },
+        {
+          "date": "2026-06-21",
+          "tickets_sold": 3551,
+          "returned": 47,
+          "net_tickets": 3504
+        },
+        {
+          "date": "2026-06-22",
+          "tickets_sold": 966,
+          "returned": 12,
+          "net_tickets": 954
+        },
+        {
+          "date": "2026-06-23",
+          "tickets_sold": 3429,
+          "returned": 68,
+          "net_tickets": 3361
+        },
+        {
+          "date": "2026-06-24",
+          "tickets_sold": 3461,
+          "returned": 76,
+          "net_tickets": 3385
+        },
+        {
+          "date": "2026-06-25",
+          "tickets_sold": 1437,
+          "returned": 18,
+          "net_tickets": 1419
+        },
+        {
+          "date": "2026-06-26",
+          "tickets_sold": 2752,
+          "returned": 61,
+          "net_tickets": 2691
+        },
+        {
+          "date": "2026-06-27",
+          "tickets_sold": 2330,
+          "returned": 36,
+          "net_tickets": 2294
+        },
+        {
+          "date": "2026-06-28",
+          "tickets_sold": 4013,
+          "returned": 62,
+          "net_tickets": 3951
+        },
+        {
+          "date": "2026-06-29",
+          "tickets_sold": 2379,
+          "returned": 64,
+          "net_tickets": 2315
+        },
+        {
+          "date": "2026-06-30",
+          "tickets_sold": 3929,
+          "returned": 77,
+          "net_tickets": 3852
+        },
+        {
+          "date": "2026-07-01",
+          "tickets_sold": 3890,
+          "returned": 135,
+          "net_tickets": 3755
+        },
+        {
+          "date": "2026-07-02",
+          "tickets_sold": 3074,
+          "returned": 47,
+          "net_tickets": 3027
+        },
+        {
+          "date": "2026-07-03",
+          "tickets_sold": 2591,
+          "returned": 17,
+          "net_tickets": 2574
+        },
+        {
+          "date": "2026-07-04",
+          "tickets_sold": 681,
+          "returned": 9,
+          "net_tickets": 672
+        },
+        {
+          "date": "2026-07-05",
+          "tickets_sold": 1589,
+          "returned": 13,
+          "net_tickets": 1576
+        },
+        {
+          "date": "2026-07-06",
+          "tickets_sold": 1594,
+          "returned": 6,
+          "net_tickets": 1588
+        },
+        {
+          "date": "2026-07-07",
+          "tickets_sold": 1066,
+          "returned": 9,
+          "net_tickets": 1057
+        },
+        {
+          "date": "2026-07-08",
+          "tickets_sold": 829,
+          "returned": 6,
+          "net_tickets": 823
+        },
+        {
+          "date": "2026-07-09",
+          "tickets_sold": 799,
+          "returned": 5,
+          "net_tickets": 794
+        },
+        {
+          "date": "2026-07-10",
+          "tickets_sold": 2046,
+          "returned": 34,
+          "net_tickets": 2012
+        },
+        {
+          "date": "2026-07-11",
+          "tickets_sold": 1731,
+          "returned": 48,
+          "net_tickets": 1683
+        },
+        {
+          "date": "2026-07-12",
+          "tickets_sold": 166,
+          "returned": 4,
+          "net_tickets": 162
+        },
+        {
+          "date": "2026-07-13",
+          "tickets_sold": 1779,
+          "returned": 43,
+          "net_tickets": 1736
+        },
+        {
+          "date": "2026-07-14",
+          "tickets_sold": 2761,
+          "returned": 27,
+          "net_tickets": 2734
+        },
+        {
+          "date": "2026-07-15",
+          "tickets_sold": 3004,
+          "returned": 33,
+          "net_tickets": 2971
+        },
+        {
+          "date": "2026-07-16",
+          "tickets_sold": 2334,
+          "returned": 7,
+          "net_tickets": 2327
+        },
+        {
+          "date": "2026-07-17",
+          "tickets_sold": 3605,
+          "returned": 16,
+          "net_tickets": 3589
+        },
+        {
+          "date": "2026-07-18",
+          "tickets_sold": 4454,
+          "returned": 30,
+          "net_tickets": 4424
+        },
+        {
+          "date": "2026-07-19",
+          "tickets_sold": 3378,
+          "returned": 20,
+          "net_tickets": 3358
+        },
+        {
+          "date": "2026-07-20",
+          "tickets_sold": 3578,
+          "returned": 14,
+          "net_tickets": 3564
+        },
+        {
+          "date": "2026-07-21",
+          "tickets_sold": 1604,
+          "returned": 3,
+          "net_tickets": 1601
+        },
+        {
+          "date": "2026-07-22",
+          "tickets_sold": 2731,
+          "returned": 13,
+          "net_tickets": 2718
+        },
+        {
+          "date": "2026-07-23",
+          "tickets_sold": 2822,
+          "returned": 9,
+          "net_tickets": 2813
+        },
+        {
+          "date": "2026-07-24",
+          "tickets_sold": 2273,
+          "returned": 16,
+          "net_tickets": 2257
+        },
+        {
+          "date": "2026-07-25",
+          "tickets_sold": 2792,
+          "returned": 9,
+          "net_tickets": 2783
+        },
+        {
+          "date": "2026-07-26",
+          "tickets_sold": 822,
+          "returned": 0,
+          "net_tickets": 822
+        },
+        {
+          "date": "2026-07-27",
+          "tickets_sold": 2755,
+          "returned": 21,
+          "net_tickets": 2734
+        },
+        {
+          "date": "2026-07-28",
+          "tickets_sold": 2322,
+          "returned": 36,
+          "net_tickets": 2286
+        },
+        {
+          "date": "2026-07-29",
+          "tickets_sold": 614,
+          "returned": 8,
+          "net_tickets": 606
+        },
+        {
+          "date": "2026-07-30",
+          "tickets_sold": 885,
+          "returned": 17,
+          "net_tickets": 868
+        },
+        {
+          "date": "2026-07-31",
+          "tickets_sold": 4536,
+          "returned": 13,
+          "net_tickets": 4523
+        },
+        {
+          "date": "2026-08-01",
+          "tickets_sold": 3736,
+          "returned": 34,
+          "net_tickets": 3702
+        },
+        {
+          "date": "2026-08-02",
+          "tickets_sold": 2464,
+          "returned": 18,
+          "net_tickets": 2446
+        },
+        {
+          "date": "2026-08-03",
+          "tickets_sold": 3368,
+          "returned": 30,
+          "net_tickets": 3338
+        },
+        {
+          "date": "2026-08-04",
+          "tickets_sold": 3552,
+          "returned": 64,
+          "net_tickets": 3488
+        },
+        {
+          "date": "2026-08-05",
+          "tickets_sold": 3498,
+          "returned": 53,
+          "net_tickets": 3445
+        },
+        {
+          "date": "2026-08-06",
+          "tickets_sold": 3257,
+          "returned": 24,
+          "net_tickets": 3233
+        },
+        {
+          "date": "2026-08-07",
+          "tickets_sold": 2640,
+          "returned": 35,
+          "net_tickets": 2605
+        },
+        {
+          "date": "2026-08-08",
+          "tickets_sold": 3787,
+          "returned": 37,
+          "net_tickets": 3750
+        },
+        {
+          "date": "2026-08-09",
+          "tickets_sold": 3083,
+          "returned": 29,
+          "net_tickets": 3054
+        },
+        {
+          "date": "2026-08-10",
+          "tickets_sold": 4287,
+          "returned": 25,
+          "net_tickets": 4262
+        },
+        {
+          "date": "2026-08-11",
+          "tickets_sold": 2418,
+          "returned": 20,
+          "net_tickets": 2398
+        },
+        {
+          "date": "2026-08-12",
+          "tickets_sold": 1093,
+          "returned": 16,
+          "net_tickets": 1077
+        },
+        {
+          "date": "2026-08-13",
+          "tickets_sold": 897,
+          "returned": 17,
+          "net_tickets": 880
+        },
+        {
+          "date": "2026-08-14",
+          "tickets_sold": 2259,
+          "returned": 40,
+          "net_tickets": 2219
+        },
+        {
+          "date": "2026-08-15",
+          "tickets_sold": 2759,
+          "returned": 27,
+          "net_tickets": 2732
+        },
+        {
+          "date": "2026-08-16",
+          "tickets_sold": 2841,
+          "returned": 19,
+          "net_tickets": 2822
+        },
+        {
+          "date": "2026-08-17",
+          "tickets_sold": 3211,
+          "returned": 23,
+          "net_tickets": 3188
+        },
+        {
+          "date": "2026-08-18",
+          "tickets_sold": 2978,
+          "returned": 15,
+          "net_tickets": 2963
+        },
+        {
+          "date": "2026-08-19",
+          "tickets_sold": 2014,
+          "returned": 11,
+          "net_tickets": 2003
+        },
+        {
+          "date": "2026-08-20",
+          "tickets_sold": 2525,
+          "returned": 23,
+          "net_tickets": 2502
+        },
+        {
+          "date": "2026-08-21",
+          "tickets_sold": 2805,
+          "returned": 37,
+          "net_tickets": 2768
+        },
+        {
+          "date": "2026-08-22",
+          "tickets_sold": 2946,
+          "returned": 34,
+          "net_tickets": 2912
+        },
+        {
+          "date": "2026-08-23",
+          "tickets_sold": 2950,
+          "returned": 23,
+          "net_tickets": 2927
+        },
+        {
+          "date": "2026-08-24",
+          "tickets_sold": 2336,
+          "returned": 13,
+          "net_tickets": 2323
+        },
+        {
+          "date": "2026-08-25",
+          "tickets_sold": 669,
+          "returned": 15,
+          "net_tickets": 654
+        },
+        {
+          "date": "2026-08-26",
+          "tickets_sold": 1216,
+          "returned": 7,
+          "net_tickets": 1209
+        },
+        {
+          "date": "2026-08-27",
+          "tickets_sold": 2309,
+          "returned": 4,
+          "net_tickets": 2305
+        },
+        {
+          "date": "2026-08-28",
+          "tickets_sold": 3276,
+          "returned": 49,
+          "net_tickets": 3227
+        },
+        {
+          "date": "2026-08-29",
+          "tickets_sold": 3571,
+          "returned": 21,
+          "net_tickets": 3550
+        },
+        {
+          "date": "2026-08-30",
+          "tickets_sold": 1886,
+          "returned": 15,
+          "net_tickets": 1871
+        },
+        {
+          "date": "2026-08-31",
+          "tickets_sold": 1839,
+          "returned": 5,
+          "net_tickets": 1834
+        },
+        {
+          "date": "2026-09-01",
+          "tickets_sold": 3078,
+          "returned": 27,
+          "net_tickets": 3051
+        },
+        {
+          "date": "2026-09-02",
+          "tickets_sold": 549,
+          "returned": 3,
+          "net_tickets": 546
+        },
+        {
+          "date": "2026-09-03",
+          "tickets_sold": 411,
+          "returned": 0,
+          "net_tickets": 411
+        },
+        {
+          "date": "2026-09-04",
+          "tickets_sold": 1094,
+          "returned": 7,
+          "net_tickets": 1087
+        },
+        {
+          "date": "2026-09-05",
+          "tickets_sold": 474,
+          "returned": 1,
+          "net_tickets": 473
+        },
+        {
+          "date": "2026-09-06",
+          "tickets_sold": 272,
+          "returned": 0,
+          "net_tickets": 272
+        },
+        {
+          "date": "2026-09-07",
+          "tickets_sold": 127,
+          "returned": 1,
+          "net_tickets": 126
+        },
+        {
+          "date": "2026-09-08",
+          "tickets_sold": 269,
+          "returned": 1,
+          "net_tickets": 268
+        },
+        {
+          "date": "2026-09-09",
+          "tickets_sold": 734,
+          "returned": 2,
+          "net_tickets": 732
+        },
+        {
+          "date": "2026-09-10",
+          "tickets_sold": 1549,
+          "returned": 12,
+          "net_tickets": 1537
+        },
+        {
+          "date": "2026-09-11",
+          "tickets_sold": 432,
+          "returned": 3,
+          "net_tickets": 429
+        },
+        {
+          "date": "2026-09-12",
+          "tickets_sold": 1750,
+          "returned": 5,
+          "net_tickets": 1745
+        },
+        {
+          "date": "2026-09-13",
+          "tickets_sold": 1649,
+          "returned": 2,
+          "net_tickets": 1647
+        }
+      ]
+    }
+  ],
+  "comparison": {
+    "start": "04-01",
+    "end": "09-13",
+    "previous": 99509,
+    "current": 260997,
+    "growthPercent": 162.2848184586319
+  }
+}

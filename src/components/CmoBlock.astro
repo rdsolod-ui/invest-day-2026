@@ -1,11 +1,11 @@
 ---
-import SeasonSales from './SeasonSales.astro';import MetricArea from './MetricArea.astro';import PlanVisual from './PlanVisual.astro';import season from '../data/season-sales.json';
+import SeasonSales from './SeasonSales.astro';import NightSales from './NightSales.astro';import admissions from '../data/admission-sales.json';import night from '../data/night-sales.json';import events from '../data/season-events.json';import MetricArea from './MetricArea.astro';import PlanVisual from './PlanVisual.astro';import season from '../data/season-sales.json';
 import Stage from './CmoStage.astro';import Head from './SectionHead.astro';import data from '../data/marketing.json';
 const {total}=Astro.props;const asset=(s:string)=>`${import.meta.env.BASE_URL.replace(/\/$/,'')}/assets/${s}`;
 const n=(v:number,d=0)=>new Intl.NumberFormat('ru-RU',{maximumFractionDigits:d,minimumFractionDigits:d}).format(v);
 const monthNames=['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен'];const seasonMonths=data.months.filter(m=>m.month>=4&&m.month<=9);
 const metrics=[{key:'tickets_all',name:'Проданные билеты, шт.',unit:'Все позиции в классификации ParkOps',digits:0},{key:'coverage',name:'Покрытие атрибуцией, %',unit:'Билеты с атрибуцией / все продажи',digits:2},{key:'cps',name:'Маркетинговый CPS, ₽',unit:'Расход / билет с атрибуцией',digits:0},{key:'romi',name:'ROMI, %',unit:'(Атриб. выручка − расход) / расход',digits:1}];
-const sum=(key:string)=>data.night.reduce((s,r)=>s+Number(r[key as keyof typeof r]),0);
+const dateLabel=(date:string)=>date.slice(8)+'.'+date.slice(5,7);
 const journeys=[{segment:'Семья',before:'Отдельные активности',after:'Целый день в парке',value:'Единый билет · питание · праздник'},{segment:'Компания друзей',before:'Привычный дневной досуг',after:'Экстрим и Night Riders',value:'Новый повод собраться вместе'},{segment:'Гость из МО',before:'Поиск отдыха рядом',after:'Поездка ради впечатлений',value:'Выбор продукта до выезда'}];
 ---
 <Stage id="core-product" title="Первый шаг: новая билетная система" index={10} total={total}>
@@ -31,8 +31,9 @@ const journeys=[{segment:'Семья',before:'Отдельные активно�
 </Stage>
 <Stage id="night-riders" title="Кейс Night Riders" index={13} total={total} night>
 <Head eyebrow="CMO / Кейс нового формата" title="Night Riders: гипотеза стала продуктом." description="Гипотеза: ночные катания и музыка создают отдельный повод для компаний друзей и любителей экстрима."/>
-<div class="night-case"><figure class="photo night-case-photo" data-reveal><img src={asset('night-riders.webp')} alt="Ночные аттракционы Night Riders" loading="lazy"/><figcaption>Новая ценность:<br/>парк после наступления темноты</figcaption></figure><div><div class="night-kpis"><div data-reveal><strong>{n(sum('net_tickets'))}</strong><span>билетов после возвратов</span></div><div data-reveal><strong>{n(sum('net_revenue')/1e6,2)} <small>млн ₽</small></strong><span>выручки после возвратов</span></div></div><div class="night-bars" aria-label="Билеты после возвратов по датам Night Riders">{data.night.map(r=><div class="night-bar-col"><strong>{n(r.net_tickets)}</strong><div class="night-bar-space"><div class="cmo-bar" style={`height:${r.net_tickets/2600*100}%`} data-grow></div></div><span>{r.day} августа</span></div>)}</div><p class="cmo-caption">Четыре даты · продажи в августе 2026</p></div></div>
-<div class="night-process">{['Гипотеза аудитории','Пилот формата','Измерение продаж','Развитие продукта'].map(t=><span data-flow>{t}</span>)}</div><p class="stage-note">{n(sum('tickets_sold'))} продано − {n(sum('returned'))} возвратов. Онлайн и касса; дата билета не равна дате покупки. Это продажи, не посещаемость.</p>
+<div class="night-kpis"><div data-reveal><strong>{n(night.total.net_tickets)}</strong><span>билетов после возвратов</span></div><div data-reveal><strong>{n(night.total.net_revenue/1e6,2)} <small>млн ₽</small></strong><span>выручки после возвратов</span></div><div data-reveal><strong>{night.hoursPerNight} <small>часа</small></strong><span>работы парка за одну ночь</span></div></div>
+<div class="night-case"><figure class="photo night-case-photo" data-reveal><img src={asset('night-riders.webp')} alt="Ночные аттракционы Night Riders" loading="lazy"/><figcaption>Новый повод.<br/>Новая аудитория.</figcaption></figure><NightSales/></div>
+<div class="night-process">{['Гипотеза аудитории','Пилот формата','Измерение продаж','Развитие продукта'].map(t=><span data-flow>{t}</span>)}</div>
 </Stage>
 <Stage id="cjm" title="CJM: было — стало" index={14} total={total}>
 <Head eyebrow="CMO / Новые ценности для аудитории" title="Меняется причина поездки." description="Единая билетная система объединяет разные активности в понятный сценарий целого визита."/>
@@ -40,8 +41,8 @@ const journeys=[{segment:'Семья',before:'Отдельные активно�
 <div class="journey-steps">{['Увидел свой повод','Выбрал формат','Купил до визита','Приехал за впечатлением'].map((x,i)=><div data-flow><span>0{i+1}</span>{x}</div>)}</div><p class="stage-note">Карта изменения предложения. Эффект на конверсию оценивается отдельно по сегментам.</p>
 </Stage>
 <Stage id="marketing-funnel" title="Продажи за сезон и ParkOps" index={15} total={total}>
-<Head eyebrow="CMO / Маркетинг и продажи" title="Продажи билетов за сезон." description="Все каналы продаж. 01.04–14.09.2026 в сравнении с 01.04–30.09.2025."/>
-<div class="season-sales-layout"><SeasonSales/><div class="parkops-card season-parkops" data-reveal><span class="label">События августа</span><h3>Новые поводы</h3><p>Запуски форматов на фоне динамики сезона.</p><div class="parkops-chain">{['01.08 · Dream Riders','08.08 · Night Riders','15 / 22 / 29.08 · повторные даты'].map(x=><div data-flow>{x}</div>)}</div><span class="cmo-caption">2026: по 14 сентября включительно</span></div></div><p class="stage-note">До вычета возвратов. Классификатор ParkOps включает сервисные позиции. 14.09 — неполный день; периоды различаются.</p>
+<Head eyebrow="CMO / Маркетинг и продажи" title="Продажи билетов за сезон." description={`Платные билеты и пакеты в парк · все каналы · сезон с 1 апреля по ${dateLabel(admissions.cutoff)}.2026.`}/>
+<div class="season-sales-layout"><SeasonSales/><aside class="season-journal" aria-label="Легенда пинов и журнал событий 2026"><span class="label">2026 / Журнал событий</span><h3>Запуски сезона</h3><ol>{events.filter(e=>e.date<=admissions.cutoff).map(e=><li class={`pin-${e.kind}`} data-flow data-journal-id={e.id}><span class="journal-number">{e.id}</span><div><time datetime={e.date}>{dateLabel(e.date)}</time><h4>{e.title}</h4><p>{e.detail}</p></div></li>)}</ol><p class="journal-source">ParkOps · собственная сквозная аналитика</p></aside></div>
 </Stage>
 <Stage id="marketing-budget" title="Расход по месяцам" index={16} total={total}>
 <Head eyebrow="CMO / Помесячный расход" title="Бюджет в динамике сезона." description="Доли фактического расхода с НДС по месяцам. Яндекс.Директ · сезон 01.04–14.09.2026."/>

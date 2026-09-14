@@ -1,0 +1,9 @@
+[
+  {"id":1,"date":"2026-06-26","title":"Паук","detail":"Открытие","kind":"ride","dx":-32,"dy":-67},
+  {"id":2,"date":"2026-06-27","title":"Night Riders","detail":"Первые ночные катания","kind":"format","dx":0,"dy":63},
+  {"id":3,"date":"2026-07-10","title":"Смерч","detail":"Запуск","kind":"ride","dx":-21,"dy":-67},
+  {"id":4,"date":"2026-07-15","title":"Вихрь","detail":"Открытие","kind":"ride","dx":24,"dy":-54},
+  {"id":5,"date":"2026-08-01","title":"Бумеранг · Dream Riders","detail":"Запуск аттракциона и формата","kind":"ride","dx":-12,"dy":-61},
+  {"id":6,"date":"2026-08-08","title":"Night Riders","detail":"Возвращение в августе","kind":"format","dx":13,"dy":63},
+  {"id":7,"date":"2026-09-07","title":"Путь Дракона","detail":"Уже работает к этой дате","kind":"confirmed","dx":-17,"dy":-59}
+]
