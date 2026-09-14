@@ -8,9 +8,11 @@
     "topic": "Индустрия парков и переход к городскому масштабу",
     "next": "industry-location",
     "nextLabel": "Индустрия парков",
-    "image": "park-wide.webp",
-    "imageAlt": "Панорама Парка Сказка в Крылатском",
-    "index": 2
+    "image": "family-walk.webp",
+    "imageAlt": "Семейная прогулка по парку Сказка",
+    "index": 2,
+    "hideTopicLabel": true,
+    "hideNext": true
   },
   {
     "id": "speaker-ivan",
@@ -19,11 +21,13 @@
     "role": "Директор по маркетингу и продажам",
     "company": "Парк Сказка",
     "topic": "Системный продуктовый подход, аудитория и продажи",
-    "next": "scale",
+    "next": "core-product",
     "nextLabel": "Аудитория и продукт",
-    "image": "bumerang.webp",
-    "imageAlt": "Аттракцион Бумеранг в Парке Сказка",
-    "index": 9
+    "image": "bumerang-summer.webp",
+    "imageAlt": "Бумеранг в парке Сказка; погода на фотографии изменена на солнечную",
+    "index": 9,
+    "hideTopicLabel": true,
+    "hideNext": true
   },
   {
     "id": "speaker-natalia",
@@ -36,7 +40,7 @@
     "nextLabel": "Финансовый блок",
     "image": "wheel.webp",
     "imageAlt": "Колесо обозрения в Парке Сказка",
-    "index": 19
+    "index": 20
   },
   {
     "id": "speaker-alexey",
@@ -49,7 +53,7 @@
     "nextLabel": "К обсуждению",
     "image": "park-wide.webp",
     "imageAlt": "Панорама Парка Сказка",
-    "index": 28,
+    "index": 29,
     "moderator": true
   }
 ]

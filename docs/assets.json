@@ -84,5 +84,88 @@
     "height": 720,
     "bytes": 91270,
     "sha256": "8596dca31f561deae660b9c40ec72bb7099a865626c0f41496db049a632a78e6"
+  },
+  {
+    "file": "assets/babl-star.webp",
+    "source": "https://parkskazka.ru/uploads/product/000/82/thumbs/2x_70_babl-star_2026-08-19_08-58-05.png",
+    "sourcePage": "https://parkskazka.ru/attraktsiony/semeynye/babl-star",
+    "verified": "2026-09-14",
+    "width": 1196,
+    "height": 896,
+    "bytes": 245336,
+    "sha256": "2b676ab2110c8311eed4ea7d651c08c63fde6364b7f152b9418129c495459401"
+  },
+  {
+    "file": "assets/gusenitsa.webp",
+    "source": "https://parkskazka.ru/uploads/product/000/37/thumbs/2x_70_01-gusenitsa_2026-08-05_16-31-35.jpeg",
+    "sourcePage": "https://parkskazka.ru/attraktsiony/semeynye/gusenitsa",
+    "verified": "2026-09-14",
+    "width": 1200,
+    "height": 896,
+    "bytes": 324800,
+    "sha256": "7f05b90359f9bf6320fd4038ab9e66f42e6033c69b5c319fa256f37b3331bcd3"
+  },
+  {
+    "file": "assets/family-walk.webp",
+    "source": "https://parkskazka.ru/charity/assets/join-family.jpg",
+    "sourcePage": "https://parkskazka.ru/charity/",
+    "verified": "2026-09-14",
+    "width": 1800,
+    "height": 1200,
+    "bytes": 500032,
+    "sha256": "c01da529d9741b28c3d89958fa421380e2de60393011cd6bb98bf46d6f179323"
+  },
+  {
+    "file": "assets/social-husky.webp",
+    "source": "https://parkskazka.ru/charity/assets/hero-social.jpg",
+    "sourcePage": "https://parkskazka.ru/charity/",
+    "verified": "2026-09-14",
+    "width": 1800,
+    "height": 1200,
+    "bytes": 462228,
+    "sha256": "e446e60954f13c3ec30d3f7cbed5ee20f1f05290fd065c6d37832b25d1e325a7"
+  },
+  {
+    "file": "assets/social-alpaca.webp",
+    "source": "https://parkskazka.ru/charity/assets/foundations-child.jpg",
+    "sourcePage": "https://parkskazka.ru/charity/",
+    "verified": "2026-09-14",
+    "width": 1800,
+    "height": 1200,
+    "bytes": 230994,
+    "sha256": "9866117f1fc37e8a8df348f28abc7b15aa1a1e801dfa9d41156b77b9cad49719"
+  },
+  {
+    "file": "assets/bumerang-summer.webp",
+    "source": "assets/bumerang.webp",
+    "sourcePage": "https://parkskazka.ru/",
+    "transformation": "Weather edited with imagegen at user request: sunny summer sky and lighting. Not an unedited documentary photograph.",
+    "verified": "2026-09-14",
+    "width": 1582,
+    "height": 994,
+    "bytes": 365274,
+    "sha256": "56df4068181c6b78c8b9f038114984db08dcb1278d1e4b29cddad08354b3d891"
+  },
+  {
+    "file": "assets/map-context.webp",
+    "source": "https://yandex.ru/maps/213/moscow/hybrid/?ll=37.470735%2C55.769000&pt=37.434686%2C55.771473%2Cpm2rdm&z=13",
+    "sourcePage": "https://yandex.ru/maps/org/skazka/12547368043/",
+    "transformation": "Static browser capture of Yandex hybrid map. Search and interaction controls hidden; map content, marker coordinates, native scale and attribution retained. Marker coordinates from public organization data: 37.434686,55.771473.",
+    "verified": "2026-09-14",
+    "width": 1120,
+    "height": 492,
+    "bytes": 804456,
+    "sha256": "508c2cdb3d98ae59d6cb0f4db3e57b6f3c73fd01f160aba899036a97c660652c"
+  },
+  {
+    "file": "assets/map-park.webp",
+    "source": "https://yandex.ru/maps/213/moscow/hybrid/?ll=37.436939%2C55.771200&pt=37.434686%2C55.771473%2Cpm2rdm&z=17",
+    "sourcePage": "https://yandex.ru/maps/org/skazka/12547368043/",
+    "transformation": "Static browser capture of Yandex hybrid map. Search and interaction controls hidden; map content, marker coordinates, native scale and attribution retained. Marker coordinates from public organization data: 37.434686,55.771473.",
+    "verified": "2026-09-14",
+    "width": 600,
+    "height": 492,
+    "bytes": 422840,
+    "sha256": "eaf13edb63ef1bb8e87baf9756e4486bea5dad8ed24521bcd141cb4ca92718dc"
   }
 ]
