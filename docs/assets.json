@@ -167,5 +167,35 @@
     "height": 492,
     "bytes": 422840,
     "sha256": "eaf13edb63ef1bb8e87baf9756e4486bea5dad8ed24521bcd141cb4ca92718dc"
+  },
+  {
+    "file": "assets/pauk.webp",
+    "source": "https://parkskazka.ru/uploads/product/000/15/thumbs/70_01-pauk_2026-08-05_16-26-48.jpeg",
+    "sourcePage": "https://parkskazka.ru/attraktsiony/ekstremalnye/pauk",
+    "verified": "2026-09-14",
+    "width": 895,
+    "height": 605,
+    "bytes": 121572,
+    "sha256": "c311ee8fb1555f6082033d7369bd84666cf162080789be8299522913c07ed9e9"
+  },
+  {
+    "file": "assets/vihr.webp",
+    "source": "https://parkskazka.ru/uploads/product/000/67/thumbs/70_1_2026-07-20_10-10-42.jpeg",
+    "sourcePage": "https://parkskazka.ru/attraktsiony/ekstremalnye/vihr",
+    "verified": "2026-09-14",
+    "width": 895,
+    "height": 403,
+    "bytes": 97982,
+    "sha256": "4ce9ea07d91bd540d80ea995373cd695d7f317467ac86e9dc63d6bbcc098f5cd"
+  },
+  {
+    "file": "assets/heart-moscow.webp",
+    "source": "https://parkskazka.ru/uploads/product/000/68/thumbs/70_1-(14)_2026-09-03_08-48-13.png",
+    "sourcePage": "https://parkskazka.ru/attraktsiony/ekstremalnye/serdtse-moskvy",
+    "verified": "2026-09-14",
+    "width": 895,
+    "height": 595,
+    "bytes": 159636,
+    "sha256": "d9b3e25f84df61c01a4f4bc05e9a01b83a3a1e28fd3bd885ead22a4911fe142c"
   }
 ]

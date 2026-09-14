@@ -1,0 +1,111 @@
+{
+  "profiles": [
+    {
+      "width": 1280,
+      "theme": "light",
+      "index": "12 / 30",
+      "overflow": [],
+      "images": true,
+      "columns": "549.328px 549.328px 549.328px",
+      "ratio": 1.7777777777777777
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "index": "12 / 30",
+      "overflow": [],
+      "images": true,
+      "columns": "549.328px 549.328px 549.328px",
+      "ratio": 1.7777777777777777
+    },
+    {
+      "width": 1600,
+      "theme": "light",
+      "index": "12 / 30",
+      "overflow": [],
+      "images": true,
+      "columns": "549.328px 549.328px 549.328px",
+      "ratio": 1.7777777777777777
+    },
+    {
+      "width": 1600,
+      "theme": "dark",
+      "index": "12 / 30",
+      "overflow": [],
+      "images": true,
+      "columns": "549.328px 549.328px 549.328px",
+      "ratio": 1.7777777777777777
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "index": "12 / 30",
+      "overflow": [],
+      "images": true,
+      "columns": "549.328px 549.328px 549.328px",
+      "ratio": 1.7777777777777777
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "index": "12 / 30",
+      "overflow": [],
+      "images": true,
+      "columns": "549.328px 549.328px 549.328px",
+      "ratio": 1.7777777777777777
+    },
+    {
+      "width": 3840,
+      "theme": "light",
+      "index": "12 / 30",
+      "overflow": [],
+      "images": true,
+      "columns": "549.328px 549.328px 549.328px",
+      "ratio": 1.7777777777777777
+    },
+    {
+      "width": 3840,
+      "theme": "dark",
+      "index": "12 / 30",
+      "overflow": [],
+      "images": true,
+      "columns": "549.328px 549.328px 549.328px",
+      "ratio": 1.7777777777777777
+    }
+  ],
+  "mobile": [
+    {
+      "width": 320,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "theme": "dark",
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "motion": true,
+  "pause": true
+}

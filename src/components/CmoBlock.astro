@@ -18,11 +18,16 @@ const journeys=[{segment:'Семья',before:'Отдельные активно�
 <div class="geo-layout"><div class="geo-orbits" aria-label="Схема приоритетов географии, не карта охвата"><div class="geo-ring ring-outer" data-flow></div><div class="geo-ring ring-inner" data-flow></div><div class="geo-core" data-reveal>СКАЗКА<span>Крылатское</span></div><span class="geo-pin pin-west" data-reveal>Запад МО</span><span class="geo-pin pin-city" data-reveal>Москва</span><span class="geo-pin pin-region" data-reveal>Другие направления МО</span></div><div class="geo-layers"><article data-flow><span>01 / Москва</span><h3>Город по удалённости</h3><p>Последовательный охват районов с учётом времени поездки в парк.</p></article><article data-flow><span>02 / Запад МО</span><h3>Западные коттеджные посёлки</h3><p>Семейный день, премиальные впечатления, праздники и встречи друзей.</p></article><article data-flow><span>03 / Расширение</span><h3>Остальные направления МО</h3><p>Последовательно по удалённости от Москвы и удобству поездки в парк.</p></article><div class="channel-strip" data-reveal><span>Контекстная реклама</span><span>Таргетная реклама</span><span>SEO</span></div></div></div>
 <p class="stage-note">Стратегия привлечения. Схема показывает приоритеты, а не измеренный охват аудитории.</p>
 </Stage>
-<Stage id="product" title="Плотность впечатлений" index={12} total={total}>
-<Head eyebrow="CMO / Продукт для новых сегментов" title="Больше экстрима за один визит." description="Разные сценарии катания в одном парке — повод приехать компанией и попробовать новое."/>
-<div class="extreme-layout"><div class="extreme-photos"><figure class="photo" data-reveal><img src={asset('bumerang.webp')} alt="Бумеранг" loading="lazy"/><figcaption>Бумеранг</figcaption></figure><figure class="photo" data-reveal><img src={asset('smerch.webp')} alt="Смерч" loading="lazy"/><figcaption>Смерч</figcaption></figure><figure class="photo" data-reveal><img src={asset('dragon.webp')} alt="Путь Дракона" loading="lazy"/><figcaption>Путь Дракона</figcaption></figure></div><div class="extreme-numbers"><div data-reveal><strong>37 <small>м</small></strong><span>высота Бумеранга</span></div><div data-reveal><strong>85,3 <small>км/ч</small></strong><span>скорость Бумеранга</span></div><div data-reveal><strong>63 <small>км/ч</small></strong><span>скорость Пути Дракона</span></div></div></div>
-<div class="segment-line" data-reveal>Поклонники экстрима <span>×</span> Компании друзей <span>×</span> Семьи с подростками</div>
-<p class="stage-note">Характеристики аттракционов. Сегменты — адресаты предложения; их фактические доли требуют отдельного замера.</p>
+<Stage id="product" title="Новые аттракционы" index={12} total={total}>
+<Head eyebrow="CMO / Развитие продукта" title="Новый масштаб аттракционов."/>
+<div class="attraction-gallery">
+{[{name:'Паук',image:'pauk.webp'},{name:'Смерч',image:'smerch.webp'},{name:'Вихрь',image:'vihr.webp'},{name:'Бумеранг',image:'bumerang.webp'},{name:'Путь Дракона',image:'dragon.webp'},{name:'Сердце Москвы',image:'heart-moscow.webp',future:true}].map(ride=><figure class:list={['photo','attraction-card',{'attraction-future':ride.future}]} data-flow>
+<img src={asset(ride.image)} alt={ride.future?'Сердце Москвы — аттракцион пока не открыт':ride.name} loading="lazy"/>
+{ride.future&&<div class="attraction-status"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 17h6l3-8 5 15 3-7h7"/></svg><span>Пока не открыт</span></div>}
+<figcaption>{ride.future&&<span class="attraction-next">Следующий запуск</span>}<h3>{ride.name}</h3></figcaption>
+</figure>)}
+</div>
+<div class="attraction-segments" data-reveal>Поклонники экстрима <span>×</span> Компании друзей <span>×</span> Семьи с подростками</div>
 </Stage>
 <Stage id="night-riders" title="Кейс Night Riders" index={13} total={total} night>
 <Head eyebrow="CMO / Кейс нового формата" title="Night Riders: гипотеза стала продуктом." description="Гипотеза: ночные катания и музыка создают отдельный повод для компаний друзей и любителей экстрима."/>
