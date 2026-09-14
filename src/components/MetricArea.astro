@@ -13,9 +13,9 @@ const fmt=(v:number)=>new Intl.NumberFormat('ru-RU',{minimumFractionDigits:digit
 <title id={`${id}-title`}>{name}</title><desc id={`${id}-desc`}>{values.map((v,i)=>`${labels[i]}: ${fmt(v)}`).join('; ')}. Нулевая линия обозначена; отрицательные значения расположены ниже неё.</desc>
 <defs><linearGradient id={`${id}-fill`} x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="var(--series-color)" stop-opacity=".36"/><stop offset="100%" stop-color="var(--series-color)" stop-opacity=".04"/></linearGradient></defs>
 {[.5,1].map(f=><line class="area-grid" x1="65" x2="685" y1={166-f*123} y2={166-f*123}/>)}
-<line class="area-zero" x1="65" x2="685" y1={zero} y2={zero}/><text class="area-zero-label" x="36" y={zero+5}>0</text>
+<line class="area-zero" x1="65" x2="685" y1={zero} y2={zero}/><text class="area-zero-label" x="16" text-anchor="end" y={zero+5}>0</text>
 <path d={area} fill={`url(#${id}-fill)`} class="area-fill" data-area/>
 <path d={line} class="area-line" data-draw/>
 {pts.map((p,i)=><g><circle cx={p.x} cy={p.y} r="6" class="area-point"/><text class="area-value" x={p.x} y={p.y-15}>{fmt(p.v)}</text><text class="area-month" x={p.x} y="199">{labels[i]}</text></g>)}
-</svg><p>{unit}</p>
+</svg>{unit&&<p>{unit}</p>}
 </article>

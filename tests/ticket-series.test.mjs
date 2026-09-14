@@ -19,8 +19,8 @@ test('growth compares matching dates, never the full prior season against the pa
  assert.ok(Math.abs(season.comparison.growthPercent-(season.comparison.current/old-1)*100)<1e-10);
  assert.equal(season.seasons[1].end,season.cutoff);assert.equal(season.seasons[0].end,'2025-09-30');
 });
-test('Night Riders spans all 92 summer days and its curve uses the same net metric as the KPI',()=>{
- assert.equal(night.start,'2026-06-01');assert.equal(night.end,'2026-08-31');validate(night);assert.equal(night.metric,'net_tickets');assert.equal(night.hoursPerNight,3);
+test('Night Riders spans all 92 summer days and its revenue curve reconciles to the revenue KPI',()=>{
+ assert.equal(night.start,'2026-06-01');assert.equal(night.end,'2026-08-31');validate(night);assert.ok(Math.abs(night.daily.reduce((sum,d)=>sum+d.net_revenue,0)-night.total.net_revenue)<.01);assert.equal(night.metric,'net_revenue');assert.equal(night.hoursPerNight,3);
  assert.ok(night.daily.slice(0,30).some(d=>d.tickets_sold>0));assert.ok(night.daily.slice(30,61).some(d=>d.tickets_sold>0));
 });
 test('event legend ids are unique, dated, and distinguish evidence of operation from opening dates',()=>{
@@ -30,6 +30,6 @@ test('event legend ids are unique, dated, and distinguish evidence of operation 
 });
 
 test('public chart snapshots contain only aggregated chart metrics',()=>{
- for(const series of [...season.seasons,night])for(const day of series.daily)assert.deepEqual(Object.keys(day).sort(),['date','net_tickets','returned','tickets_sold']);
+ for(const series of [...season.seasons,night])for(const day of series.daily)assert.deepEqual(Object.keys(day).sort(),series===night?['date','net_revenue','net_tickets','returned','tickets_sold']:['date','net_tickets','returned','tickets_sold']);
  assert.ok(!JSON.stringify(season).includes('ticket_type'));assert.equal(typeof night.total.net_revenue,'number');
 });

@@ -15,555 +15,647 @@
       "date": "2026-06-01",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-06-02",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-06-03",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-06-04",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-06-05",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-06-06",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-06-07",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-06-08",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-06-09",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-06-10",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-06-11",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-06-12",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-06-13",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-06-14",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-06-15",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-06-16",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-06-17",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-06-18",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-06-19",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-06-20",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-06-21",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-06-22",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-06-23",
       "tickets_sold": 42,
       "returned": 0,
-      "net_tickets": 42
+      "net_tickets": 42,
+      "net_revenue": 84000
     },
     {
       "date": "2026-06-24",
       "tickets_sold": 557,
       "returned": 27,
-      "net_tickets": 530
+      "net_tickets": 530,
+      "net_revenue": 1066000
     },
     {
       "date": "2026-06-25",
       "tickets_sold": 497,
       "returned": 8,
-      "net_tickets": 489
+      "net_tickets": 489,
+      "net_revenue": 978000
     },
     {
       "date": "2026-06-26",
       "tickets_sold": 843,
       "returned": 39,
-      "net_tickets": 804
+      "net_tickets": 804,
+      "net_revenue": 1610000
     },
     {
       "date": "2026-06-27",
       "tickets_sold": 667,
       "returned": 18,
-      "net_tickets": 649
+      "net_tickets": 649,
+      "net_revenue": 1232000
     },
     {
       "date": "2026-06-28",
       "tickets_sold": 531,
       "returned": 16,
-      "net_tickets": 515
+      "net_tickets": 515,
+      "net_revenue": 1006000
     },
     {
       "date": "2026-06-29",
       "tickets_sold": 696,
       "returned": 32,
-      "net_tickets": 664
+      "net_tickets": 664,
+      "net_revenue": 1330000
     },
     {
       "date": "2026-06-30",
       "tickets_sold": 726,
       "returned": 15,
-      "net_tickets": 711
+      "net_tickets": 711,
+      "net_revenue": 1424000
     },
     {
       "date": "2026-07-01",
       "tickets_sold": 820,
       "returned": 112,
-      "net_tickets": 708
+      "net_tickets": 708,
+      "net_revenue": 1444000
     },
     {
       "date": "2026-07-02",
       "tickets_sold": 939,
       "returned": 40,
-      "net_tickets": 899
+      "net_tickets": 899,
+      "net_revenue": 1806000
     },
     {
       "date": "2026-07-03",
       "tickets_sold": 2,
       "returned": 0,
-      "net_tickets": 2
+      "net_tickets": 2,
+      "net_revenue": 10000
     },
     {
       "date": "2026-07-04",
       "tickets_sold": 249,
       "returned": 3,
-      "net_tickets": 246
+      "net_tickets": 246,
+      "net_revenue": 1081000
     },
     {
       "date": "2026-07-05",
       "tickets_sold": 33,
       "returned": 0,
-      "net_tickets": 33
+      "net_tickets": 33,
+      "net_revenue": 160000
     },
     {
       "date": "2026-07-06",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-07-07",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-07-08",
       "tickets_sold": 3,
       "returned": 0,
-      "net_tickets": 3
+      "net_tickets": 3,
+      "net_revenue": 6000
     },
     {
       "date": "2026-07-09",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-07-10",
       "tickets_sold": 208,
       "returned": 25,
-      "net_tickets": 183
+      "net_tickets": 183,
+      "net_revenue": 376000
     },
     {
       "date": "2026-07-11",
       "tickets_sold": 312,
       "returned": 24,
-      "net_tickets": 288
+      "net_tickets": 288,
+      "net_revenue": 894000
     },
     {
       "date": "2026-07-12",
       "tickets_sold": 11,
       "returned": 0,
-      "net_tickets": 11
+      "net_tickets": 11,
+      "net_revenue": 55000
     },
     {
       "date": "2026-07-13",
       "tickets_sold": 483,
       "returned": 33,
-      "net_tickets": 450
+      "net_tickets": 450,
+      "net_revenue": 908000
     },
     {
       "date": "2026-07-14",
       "tickets_sold": 483,
       "returned": 15,
-      "net_tickets": 468
+      "net_tickets": 468,
+      "net_revenue": 942000
     },
     {
       "date": "2026-07-15",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-07-16",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-07-17",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-07-18",
       "tickets_sold": 336,
       "returned": 12,
-      "net_tickets": 324
+      "net_tickets": 324,
+      "net_revenue": 1479000
     },
     {
       "date": "2026-07-19",
       "tickets_sold": 16,
       "returned": 4,
-      "net_tickets": 12
+      "net_tickets": 12,
+      "net_revenue": 42000
     },
     {
       "date": "2026-07-20",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-07-21",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-07-22",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-07-23",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-07-24",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-07-25",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-07-26",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-07-27",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-07-28",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-07-29",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-07-30",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-07-31",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-08-01",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-08-02",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-08-03",
       "tickets_sold": 24,
       "returned": 17,
-      "net_tickets": 7
+      "net_tickets": 7,
+      "net_revenue": 70000
     },
     {
       "date": "2026-08-04",
       "tickets_sold": 47,
       "returned": 34,
-      "net_tickets": 13
+      "net_tickets": 13,
+      "net_revenue": 95000
     },
     {
       "date": "2026-08-05",
       "tickets_sold": 165,
       "returned": 28,
-      "net_tickets": 137
+      "net_tickets": 137,
+      "net_revenue": 377500
     },
     {
       "date": "2026-08-06",
       "tickets_sold": 544,
       "returned": 12,
-      "net_tickets": 532
+      "net_tickets": 532,
+      "net_revenue": 1337500
     },
     {
       "date": "2026-08-07",
       "tickets_sold": 575,
       "returned": 21,
-      "net_tickets": 554
+      "net_tickets": 554,
+      "net_revenue": 1385000
     },
     {
       "date": "2026-08-08",
       "tickets_sold": 864,
       "returned": 24,
-      "net_tickets": 840
+      "net_tickets": 840,
+      "net_revenue": 2252500
     },
     {
       "date": "2026-08-09",
       "tickets_sold": 138,
       "returned": 11,
-      "net_tickets": 127
+      "net_tickets": 127,
+      "net_revenue": 337500
     },
     {
       "date": "2026-08-10",
       "tickets_sold": 252,
       "returned": 10,
-      "net_tickets": 242
+      "net_tickets": 242,
+      "net_revenue": 607500
     },
     {
       "date": "2026-08-11",
       "tickets_sold": 263,
       "returned": 9,
-      "net_tickets": 254
+      "net_tickets": 254,
+      "net_revenue": 635000
     },
     {
       "date": "2026-08-12",
       "tickets_sold": 210,
       "returned": 10,
-      "net_tickets": 200
+      "net_tickets": 200,
+      "net_revenue": 502500
     },
     {
       "date": "2026-08-13",
       "tickets_sold": 267,
       "returned": 17,
-      "net_tickets": 250
+      "net_tickets": 250,
+      "net_revenue": 635000
     },
     {
       "date": "2026-08-14",
       "tickets_sold": 433,
       "returned": 33,
-      "net_tickets": 400
+      "net_tickets": 400,
+      "net_revenue": 1015000
     },
     {
       "date": "2026-08-15",
       "tickets_sold": 320,
       "returned": 16,
-      "net_tickets": 304
+      "net_tickets": 304,
+      "net_revenue": 875000
     },
     {
       "date": "2026-08-16",
       "tickets_sold": 121,
       "returned": 9,
-      "net_tickets": 112
+      "net_tickets": 112,
+      "net_revenue": 302500
     },
     {
       "date": "2026-08-17",
       "tickets_sold": 161,
       "returned": 5,
-      "net_tickets": 156
+      "net_tickets": 156,
+      "net_revenue": 390000
     },
     {
       "date": "2026-08-18",
       "tickets_sold": 194,
       "returned": 5,
-      "net_tickets": 189
+      "net_tickets": 189,
+      "net_revenue": 477500
     },
     {
       "date": "2026-08-19",
       "tickets_sold": 196,
       "returned": 7,
-      "net_tickets": 189
+      "net_tickets": 189,
+      "net_revenue": 472500
     },
     {
       "date": "2026-08-20",
       "tickets_sold": 317,
       "returned": 17,
-      "net_tickets": 300
+      "net_tickets": 300,
+      "net_revenue": 750000
     },
     {
       "date": "2026-08-21",
       "tickets_sold": 420,
       "returned": 21,
-      "net_tickets": 399
+      "net_tickets": 399,
+      "net_revenue": 997500
     },
     {
       "date": "2026-08-22",
       "tickets_sold": 461,
       "returned": 25,
-      "net_tickets": 436
+      "net_tickets": 436,
+      "net_revenue": 1170000
     },
     {
       "date": "2026-08-23",
       "tickets_sold": 145,
       "returned": 8,
-      "net_tickets": 137
+      "net_tickets": 137,
+      "net_revenue": 337500
     },
     {
       "date": "2026-08-24",
       "tickets_sold": 155,
       "returned": 4,
-      "net_tickets": 151
+      "net_tickets": 151,
+      "net_revenue": 377500
     },
     {
       "date": "2026-08-25",
       "tickets_sold": 173,
       "returned": 13,
-      "net_tickets": 160
+      "net_tickets": 160,
+      "net_revenue": 410000
     },
     {
       "date": "2026-08-26",
       "tickets_sold": 137,
       "returned": 3,
-      "net_tickets": 134
+      "net_tickets": 134,
+      "net_revenue": 335000
     },
     {
       "date": "2026-08-27",
       "tickets_sold": 182,
       "returned": 2,
-      "net_tickets": 180
+      "net_tickets": 180,
+      "net_revenue": 450000
     },
     {
       "date": "2026-08-28",
       "tickets_sold": 441,
       "returned": 40,
-      "net_tickets": 401
+      "net_tickets": 401,
+      "net_revenue": 1022500
     },
     {
       "date": "2026-08-29",
       "tickets_sold": 683,
       "returned": 4,
-      "net_tickets": 679
+      "net_tickets": 679,
+      "net_revenue": 1697500
     },
     {
       "date": "2026-08-30",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     },
     {
       "date": "2026-08-31",
       "tickets_sold": 0,
       "returned": 0,
-      "net_tickets": 0
+      "net_tickets": 0,
+      "net_revenue": 0
     }
   ],
   "hoursPerNight": 3,
-  "metric": "net_tickets"
+  "metric": "net_revenue"
 }
