@@ -1,0 +1,2178 @@
+{
+  "url": "http://127.0.0.1:8776/invest-day-2026/",
+  "profiles": [
+    {
+      "width": 1280,
+      "theme": "light",
+      "id": "start",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "id": "speaker-viktor",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "id": "industry-location",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "id": "industry-assets",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "id": "industry-generations",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "id": "industry-choice",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "id": "story",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "id": "industry-city",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "id": "speaker-ivan",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "id": "scale",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "id": "product",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "id": "night-riders",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "id": "cjm",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "id": "marketing-funnel",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "id": "marketing-budget",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "id": "marketing-performance",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "id": "cross-sales",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "id": "cmo-plans",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "id": "speaker-natalia",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "id": "investment",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "id": "baseline",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "id": "demand",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "id": "calendar",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "id": "finance",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "id": "revenue-impact",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "id": "targets",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "id": "execution",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "id": "speaker-alexey",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "id": "discussion",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "id": "start",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "id": "speaker-viktor",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "id": "industry-location",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "id": "industry-assets",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "id": "industry-generations",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "id": "industry-choice",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "id": "story",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "id": "industry-city",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "id": "speaker-ivan",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "id": "scale",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "id": "product",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "id": "night-riders",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "id": "cjm",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "id": "marketing-funnel",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "id": "marketing-budget",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "id": "marketing-performance",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "id": "cross-sales",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "id": "cmo-plans",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "id": "speaker-natalia",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "id": "investment",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "id": "baseline",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "id": "demand",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "id": "calendar",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "id": "finance",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "id": "revenue-impact",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "id": "targets",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "id": "execution",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "id": "speaker-alexey",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "id": "discussion",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "light",
+      "id": "start",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "light",
+      "id": "speaker-viktor",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "light",
+      "id": "industry-location",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "light",
+      "id": "industry-assets",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "light",
+      "id": "industry-generations",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "light",
+      "id": "industry-choice",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "light",
+      "id": "story",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "light",
+      "id": "industry-city",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "light",
+      "id": "speaker-ivan",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "light",
+      "id": "scale",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "light",
+      "id": "product",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "light",
+      "id": "night-riders",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "light",
+      "id": "cjm",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "light",
+      "id": "marketing-funnel",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "light",
+      "id": "marketing-budget",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "light",
+      "id": "marketing-performance",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "light",
+      "id": "cross-sales",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "light",
+      "id": "cmo-plans",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "light",
+      "id": "speaker-natalia",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "light",
+      "id": "investment",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "light",
+      "id": "baseline",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "light",
+      "id": "demand",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "light",
+      "id": "calendar",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "light",
+      "id": "finance",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "light",
+      "id": "revenue-impact",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "light",
+      "id": "targets",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "light",
+      "id": "execution",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "light",
+      "id": "speaker-alexey",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "light",
+      "id": "discussion",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "dark",
+      "id": "start",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "dark",
+      "id": "speaker-viktor",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "dark",
+      "id": "industry-location",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "dark",
+      "id": "industry-assets",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "dark",
+      "id": "industry-generations",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "dark",
+      "id": "industry-choice",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "dark",
+      "id": "story",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "dark",
+      "id": "industry-city",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "dark",
+      "id": "speaker-ivan",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "dark",
+      "id": "scale",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "dark",
+      "id": "product",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "dark",
+      "id": "night-riders",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "dark",
+      "id": "cjm",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "dark",
+      "id": "marketing-funnel",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "dark",
+      "id": "marketing-budget",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "dark",
+      "id": "marketing-performance",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "dark",
+      "id": "cross-sales",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "dark",
+      "id": "cmo-plans",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "dark",
+      "id": "speaker-natalia",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "dark",
+      "id": "investment",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "dark",
+      "id": "baseline",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "dark",
+      "id": "demand",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "dark",
+      "id": "calendar",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "dark",
+      "id": "finance",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "dark",
+      "id": "revenue-impact",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "dark",
+      "id": "targets",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "dark",
+      "id": "execution",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "dark",
+      "id": "speaker-alexey",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1600,
+      "theme": "dark",
+      "id": "discussion",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "id": "start",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "id": "speaker-viktor",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "id": "industry-location",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "id": "industry-assets",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "id": "industry-generations",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "id": "industry-choice",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "id": "story",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "id": "industry-city",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "id": "speaker-ivan",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "id": "scale",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "id": "product",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "id": "night-riders",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "id": "cjm",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "id": "marketing-funnel",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "id": "marketing-budget",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "id": "marketing-performance",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "id": "cross-sales",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "id": "cmo-plans",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "id": "speaker-natalia",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "id": "investment",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "id": "baseline",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "id": "demand",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "id": "calendar",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "id": "finance",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "id": "revenue-impact",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "id": "targets",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "id": "execution",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "id": "speaker-alexey",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "id": "discussion",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "id": "start",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "id": "speaker-viktor",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "id": "industry-location",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "id": "industry-assets",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "id": "industry-generations",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "id": "industry-choice",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "id": "story",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "id": "industry-city",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "id": "speaker-ivan",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "id": "scale",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "id": "product",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "id": "night-riders",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "id": "cjm",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "id": "marketing-funnel",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "id": "marketing-budget",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "id": "marketing-performance",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "id": "cross-sales",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "id": "cmo-plans",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "id": "speaker-natalia",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "id": "investment",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "id": "baseline",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "id": "demand",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "id": "calendar",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "id": "finance",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "id": "revenue-impact",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "id": "targets",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "id": "execution",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "id": "speaker-alexey",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "id": "discussion",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "light",
+      "id": "start",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "light",
+      "id": "speaker-viktor",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "light",
+      "id": "industry-location",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "light",
+      "id": "industry-assets",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "light",
+      "id": "industry-generations",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "light",
+      "id": "industry-choice",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "light",
+      "id": "story",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "light",
+      "id": "industry-city",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "light",
+      "id": "speaker-ivan",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "light",
+      "id": "scale",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "light",
+      "id": "product",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "light",
+      "id": "night-riders",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "light",
+      "id": "cjm",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "light",
+      "id": "marketing-funnel",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "light",
+      "id": "marketing-budget",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "light",
+      "id": "marketing-performance",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "light",
+      "id": "cross-sales",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "light",
+      "id": "cmo-plans",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "light",
+      "id": "speaker-natalia",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "light",
+      "id": "investment",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "light",
+      "id": "baseline",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "light",
+      "id": "demand",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "light",
+      "id": "calendar",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "light",
+      "id": "finance",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "light",
+      "id": "revenue-impact",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "light",
+      "id": "targets",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "light",
+      "id": "execution",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "light",
+      "id": "speaker-alexey",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "light",
+      "id": "discussion",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "dark",
+      "id": "start",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "dark",
+      "id": "speaker-viktor",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "dark",
+      "id": "industry-location",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "dark",
+      "id": "industry-assets",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "dark",
+      "id": "industry-generations",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "dark",
+      "id": "industry-choice",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "dark",
+      "id": "story",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "dark",
+      "id": "industry-city",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "dark",
+      "id": "speaker-ivan",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "dark",
+      "id": "scale",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "dark",
+      "id": "product",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "dark",
+      "id": "night-riders",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "dark",
+      "id": "cjm",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "dark",
+      "id": "marketing-funnel",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "dark",
+      "id": "marketing-budget",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "dark",
+      "id": "marketing-performance",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "dark",
+      "id": "cross-sales",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "dark",
+      "id": "cmo-plans",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "dark",
+      "id": "speaker-natalia",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "dark",
+      "id": "investment",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "dark",
+      "id": "baseline",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "dark",
+      "id": "demand",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "dark",
+      "id": "calendar",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "dark",
+      "id": "finance",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "dark",
+      "id": "revenue-impact",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "dark",
+      "id": "targets",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "dark",
+      "id": "execution",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "dark",
+      "id": "speaker-alexey",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    },
+    {
+      "width": 3840,
+      "theme": "dark",
+      "id": "discussion",
+      "ratio": 1.7777777777777777,
+      "overflow": [],
+      "pageOverflow": false,
+      "missing": []
+    }
+  ],
+  "mobile": [
+    {
+      "theme": "light",
+      "width": 320,
+      "scrollWidth": 320,
+      "scenes": 29
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "scrollWidth": 320,
+      "scenes": 29
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "scrollWidth": 390,
+      "scenes": 29
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "scrollWidth": 390,
+      "scenes": 29
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "scrollWidth": 768,
+      "scenes": 29
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "scrollWidth": 768,
+      "scenes": 29
+    }
+  ],
+  "failures": [],
+  "errors": [],
+  "photosDecodedBeforeShow": true,
+  "fonts": {
+    "manrope": true,
+    "golos": true
+  },
+  "motion": {
+    "fourAreaColors": [
+      "rgb(0, 127, 144)",
+      "rgb(60, 104, 206)",
+      "rgb(139, 71, 184)",
+      "rgb(183, 91, 32)"
+    ],
+    "lineAnimations": true,
+    "motionOff": true,
+    "offscreenCancelled": true,
+    "reducedMotion": true,
+    "noJs": true,
+    "threePlanVisuals": true
+  },
+  "loops": {
+    "historyCycle": true,
+    "historyManualPause": true,
+    "calendarCycle": true,
+    "calendarManualPause": true,
+    "motionOff": true,
+    "profiles": [
+      {
+        "id": "speaker-viktor",
+        "next": "industry-location"
+      },
+      {
+        "id": "speaker-ivan",
+        "next": "scale"
+      },
+      {
+        "id": "speaker-natalia",
+        "next": "investment"
+      },
+      {
+        "id": "speaker-alexey",
+        "next": "discussion"
+      }
+    ],
+    "errors": []
+  }
+}

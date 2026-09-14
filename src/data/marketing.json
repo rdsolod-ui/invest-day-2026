@@ -1,5 +1,5 @@
 {
-  "snapshot": "2026-09-11",
+  "snapshot": "2026-09-14",
   "months": [
     {
       "month": 1,
@@ -29,7 +29,6 @@
       "romi": -100.0
     },
     {
-      "month": 4,
       "spend_with_vat": 739470.11,
       "tickets_sold": 11.0,
       "tickets_all": 7061.0,
@@ -37,10 +36,10 @@
       "coverage": 0.16,
       "cps": 67224.56,
       "roas": 0.0,
-      "romi": -100.0
+      "romi": -100.0,
+      "month": 4
     },
     {
-      "month": 5,
       "spend_with_vat": 5711045.67,
       "tickets_sold": 202.0,
       "tickets_all": 46079.0,
@@ -48,21 +47,21 @@
       "coverage": 0.44,
       "cps": 28272.5,
       "roas": 0.05,
-      "romi": -94.77
+      "romi": -94.77,
+      "month": 5
     },
     {
-      "month": 6,
       "spend_with_vat": 10833694.03,
-      "tickets_sold": 14423.0,
+      "tickets_sold": 14426.0,
       "tickets_all": 94424.0,
-      "revenue": 34947460.0,
-      "coverage": 15.27,
-      "cps": 751.14,
+      "revenue": 34962810.0,
+      "coverage": 15.28,
+      "cps": 750.98,
       "roas": 3.23,
-      "romi": 222.58
+      "romi": 222.72,
+      "month": 6
     },
     {
-      "month": 7,
       "spend_with_vat": 7324218.19,
       "tickets_sold": 20118.0,
       "tickets_all": 102919.0,
@@ -70,29 +69,30 @@
       "coverage": 19.55,
       "cps": 364.06,
       "roas": 6.93,
-      "romi": 593.4
+      "romi": 593.4,
+      "month": 7
     },
     {
-      "month": 8,
       "spend_with_vat": 6680208.92,
-      "tickets_sold": 23998.0,
+      "tickets_sold": 24097.0,
       "tickets_all": 123993.0,
-      "revenue": 64446700.0,
-      "coverage": 19.35,
-      "cps": 278.37,
-      "roas": 9.65,
-      "romi": 864.74
+      "revenue": 64899600.0,
+      "coverage": 19.43,
+      "cps": 277.22,
+      "roas": 9.72,
+      "romi": 871.52,
+      "month": 8
     },
     {
+      "spend_with_vat": 1178270.69,
+      "tickets_sold": 3295.0,
+      "tickets_all": 19410.0,
+      "revenue": 8674200.0,
+      "coverage": 16.98,
+      "cps": 357.59,
+      "roas": 7.36,
+      "romi": 636.18,
       "month": 9,
-      "spend_with_vat": 883460.03,
-      "tickets_sold": 2364.0,
-      "tickets_all": 13517.0,
-      "revenue": 5568700.0,
-      "coverage": 17.49,
-      "cps": 373.71,
-      "roas": 6.3,
-      "romi": 530.33,
       "partial": true
     }
   ],

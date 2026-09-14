@@ -1,25 +1,15 @@
 ---
-import Head from '../components/SectionHead.astro';
+import CeoBlock from '../components/CeoBlock.astro';
+import FinanceBlock from '../components/FinanceBlock.astro';
 import SpeakerScene from '../components/SpeakerScene.astro';
 import CmoBlock from '../components/CmoBlock.astro';
 import speakers from '../data/speakers.json';
-const totalScenes=23;
-import Chart from '../components/ComparisonChart.astro';
-import data from '../data/metrics.json';
+const totalScenes=29;
 import '../styles/site.css';
+import '../styles/revision.css';
 const base=import.meta.env.BASE_URL.replace(/\/$/,'');
 const asset=(s:string)=>`${base}/assets/${s}`;
-const n=(v:number,d=1)=>new Intl.NumberFormat('ru-RU',{minimumFractionDigits:d,maximumFractionDigits:d}).format(v);
-const integer=(v:number)=>new Intl.NumberFormat('ru-RU').format(v);
-const d=data.demand, f=data.finance, investment=data.investment;
-const traffic=d.tickets.map((v,i)=>v/(d.conversion[i]/100)/1000);
-const growth=Math.round((d.tickets[1]/d.tickets[0]-1)*100);
-const rows=f.rows;
-const historyPoints=[{year:2024,revenue:data.historical.revenue,traffic:data.historical.traffic},...data.oldPlan];
-const graphPoints=historyPoints.map((p,i)=>`${90+i*204},${470-p.revenue/6*410}`);
-const graphLine='M'+graphPoints.join(' L');
-const graphArea=graphLine+' L1110,470 L90,470 Z';
-const nav=[['story','История'],['product','Продукт'],['investment','Финансы'],['targets','Перспектива']];
+const nav=[['industry-location','Индустрия'],['product','Продукт'],['investment','Финансы'],['targets','Перспектива']];
 ---
 <!doctype html>
 <html lang="ru">
@@ -46,53 +36,17 @@ const nav=[['story','История'],['product','Продукт'],['investment'
 <main id="main">
 <div class="scene-shell"><section class="scene hero" id="start" data-title="Новый масштаб"><img class="stage-brand" src={asset('skazka-logo.svg')} alt="Сказка" width="145" height="38"/><span class="stage-index">01 / {totalScenes}</span>
 <img class="hero-background" src={asset('park-wide.webp')} alt="Панорама парка Сказка в Крылатском" width="1400" height="933" fetchpriority="high"/>
-<div class="hero-shade"></div><div class="hero-copy"><p class="eyebrow" data-reveal>Парк Сказка · Инвест День 2026</p><h1 data-reveal>Новый<br/><span>масштаб.</span></h1><p class="hero-lead" data-reveal>От районного парка<br/>к городскому продукту на целый день.</p><a class="hero-link" href="#story">История трансформации <span>↗</span></a></div>
+<div class="hero-shade"></div><div class="hero-copy"><p class="eyebrow" data-reveal>Парк Сказка · Инвест День 2026</p><h1 data-reveal>Новый<br/><span>масштаб.</span></h1><p class="hero-lead" data-reveal>От районного парка<br/>к городскому продукту на целый день.</p><a class="hero-link" href="#speaker-viktor">Начало выступлений <span>↗</span></a></div>
 <div class="hero-stamp" aria-hidden="true">20<br/>26</div><div class="scene-foot"><span>Москва · Крылатское</span><span>Продукт / Инвестиции / Результат</span><span>01 / {totalScenes}</span></div>
 </section></div>
 <SpeakerScene speaker={speakers[0]} total={totalScenes}/>
-<div class="scene-shell"><section class="scene section" id="story" data-title="Трансформация"><img class="stage-brand" src={asset('skazka-logo.svg')} alt="Сказка" width="145" height="38"/><span class="stage-index">03 / {totalScenes}</span>
-<Head eyebrow="01 / История парка" title="Место, ради которого едут." description="От отдельных активностей рядом с домом — к целому дню впечатлений для города."/>
-<div class="story-layout"><div class="story-copy"><div class="story-before" data-reveal><span class="label">Восемь лет развития</span><h3>Районный парк</h3><p>Локальная аудитория.<br/>Отдельные активности.</p></div><div class="story-transition" aria-hidden="true">↓ <span>Инвестиционный контракт</span></div><div class="story-after" data-reveal><span class="label">Новая модель</span><h3>Городской<br/>продукт на день</h3><p>Больше сценариев.<br/>Шире география гостей.</p></div></div><figure class="story-photo photo" data-reveal><img src={asset('wheel.webp')} alt="Колесо обозрения среди деревьев парка Сказка" loading="lazy"/><figcaption>Новый взгляд на знакомое место.</figcaption></figure></div>
-</section></div>
+<CeoBlock total={totalScenes}/>
 <SpeakerScene speaker={speakers[1]} total={totalScenes}/>
 <CmoBlock total={totalScenes}/>
 <SpeakerScene speaker={speakers[2]} total={totalScenes}/>
-<div class="scene-shell"><section class="scene section night investment-section" id="investment" data-title="Инвестиционная программа"><img class="stage-brand" src={asset('skazka-logo.svg')} alt="Сказка" width="145" height="38"/><span class="stage-index">15 / {totalScenes}</span>
-<Head eyebrow="04 / Финансы · Инвестиции" title="Инвестиции обрели масштаб." description="Основные вложения сделаны. Завершается ввод новых мощностей."/>
-<div class="investment-grid"><div class="investment-number" data-reveal><span class="label">Совокупные вложения парка и партнёров</span><strong>≈{n(investment.value)}</strong><span class="unit">млрд ₽</span><p>Управленческая оценка</p></div><div class="investment-details"><div class="two-stats"><div data-reveal><strong>{investment.preparedHectares}<small> га</small></strong><p>подготовлено<br/>под новую зону</p></div><div data-reveal><strong>{investment.rides}</strong><p>аттракционов<br/>{investment.ownRides} собственных / {investment.partnerRides} партнёрских</p></div></div><div class="investment-lines"><p><span>Оборудование</span><b>01</b></p><p><span>Основания, монтаж и сети</span><b>02</b></p><p><span>Благоустройство и гостевая среда</span><b>03</b></p></div><p class="note">Парк создаёт инфраструктуру и поток гостей.<br/>Партнёры финансируют часть аттракционов.</p></div></div>
-</section></div>
-<div class="scene-shell"><section class="scene section history-scene" id="baseline" data-title="Историческая база"><img class="stage-brand" src={asset('skazka-logo.svg')} alt="Сказка" width="145" height="38"/><span class="stage-index">16 / {totalScenes}</span>
-<Head eyebrow="05 / Историческая база" title="Точка отсчёта. Траектория роста." description="Первоначальный план, представленный в 2024 году. Выручка, млрд ₽."/>
-<div class="history-layout" data-history><div class="history-plot"><svg viewBox="0 0 1200 560" role="img" aria-label="Исторический план выручки: оценка 2024 — 1,5; план 2025 — 2,4; 2026 — 4,2; 2027 — 4,7; 2028 — 5,4; 2029 — 5,5 млрд рублей">
-<defs><linearGradient id="area-fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#3ebde6" stop-opacity=".65"/><stop offset="100%" stop-color="#3ebde6" stop-opacity=".02"/></linearGradient><clipPath id="history-clip"><rect id="history-reveal" x="0" y="0" width="1200" height="560"/></clipPath></defs>
-{[0,2,4,6].map(v=><g class="history-gridline"><line x1="90" y1={470-v/6*410} x2="1110" y2={470-v/6*410}/><text x="42" y={478-v/6*410}>{v}</text></g>)}
-<path class="history-ghost" d={graphLine}/><g clip-path="url(#history-clip)"><path class="history-area" d={graphArea}/><path class="history-line" d={graphLine}/></g>
-{historyPoints.map((p,i)=><g class="history-point" data-point={i}><circle class="point-halo" cx={90+i*204} cy={470-p.revenue/6*410} r="19"/><circle class="point-core" cx={90+i*204} cy={470-p.revenue/6*410} r="8"/><text class="point-value" x={90+i*204} y={440-p.revenue/6*410} text-anchor="middle">{n(p.revenue)}</text><text class="point-year" x={90+i*204} y="520" text-anchor="middle">{p.year}</text></g>)}
-</svg><div class="history-select" aria-label="Годы исторического плана">{historyPoints.map((p,i)=><button data-history-year={i} aria-pressed={i===0?'true':'false'} aria-label={`${p.year}: ${n(p.revenue)} млрд рублей, ${n(p.traffic,p.traffic===2.25?2:1)} млн гостей`}>{p.year}</button>)}</div></div>
-<div class="history-inspector"><div class="inspector-top"><span class="label">Веха плана</span><button class="loop-toggle" data-loop="history" aria-pressed="false" aria-label="Приостановить анимацию графика">Ⅱ</button></div>{historyPoints.map((p,i)=><article class={`history-hint ${i===0?'selected':''}`} data-history-hint={i}><span class="hint-status">{i===0?'Оценка на 2024':'Исторический план'}</span><h3>{p.year}</h3><strong>{n(p.revenue)} <small>млрд ₽</small></strong><p>выручка</p><div class="hint-traffic"><b>{n(p.traffic,p.traffic===2.25?2:1)} млн</b><span>посетителей за год</span></div>{i===0&&<div class="repeat-note">30% повторных посещений</div>}</article>)}<div class="cycle-track"><span></span></div></div></div><p class="stage-note">Оценка и плановые значения, а не фактические результаты этих лет.</p>
-</section></div>
-<div class="scene-shell"><section class="scene section tinted" id="demand" data-title="Спрос и билеты"><img class="stage-brand" src={asset('skazka-logo.svg')} alt="Сказка" width="145" height="38"/><span class="stage-index">17 / {totalScenes}</span>
-<Head eyebrow="06 / Спрос" title="Больше гостей выбирают билет." description="Апрель–август 2025 и 2026. Сопоставимый период."/>
-<div class="demand-layout"><div class="demand-charts"><Chart title="Оплаченные билеты" values={d.tickets.map(x=>x/1000)} max={300} labels={['2025','2026']} unit="тыс. билетов"/><Chart title="Расчётный входящий поток" values={traffic} max={450} labels={['2025','2026']} unit="тыс. гостей" approximate/></div><div class="demand-summary"><div data-reveal><strong>+{growth}%</strong><p>оплаченных билетов</p><small>{integer(d.tickets[0])} → {integer(d.tickets[1])}</small></div><div data-reveal><strong>{d.conversion[0]}<small>%</small><span class="thin-arrow"> → </span>{d.conversion[1]}<small>%</small></strong><p>доля оплативших во входящем потоке</p><span class="pill">+{d.conversion[1]-d.conversion[0]} п.п.</span></div><div class="rides-note"><strong>{n(d.rides/1000)} тыс.</strong><p>проходов на {d.newObjects} новых аттракционах<br/>{d.ridesPeriod}</p></div></div></div><p class="stage-note">Входящий поток ≈ билеты / доля оплативших. Проходы не равны уникальным гостям.</p>
-</section></div>
-<div class="scene-shell"><section class="scene section" id="calendar" data-title="Календарь ввода"><img class="stage-brand" src={asset('skazka-logo.svg')} alt="Сказка" width="145" height="38"/><span class="stage-index">18 / {totalScenes}</span>
-<Head eyebrow="07 / Календарь реализации" title="От запуска — к полному сезону." description="Фактический ввод новых объектов сместил сроки реализации потенциала."/>
-<div class="launch-layout"><div class="launch-timeline"><article data-reveal><span>2024</span><div><h3>Исходный график</h3><p>Ввод новых мощностей к началу высокого сезона.</p></div></article><article data-reveal><span>2025</span><div><h3>Слабый сезон</h3><p>Холодное лето и ограниченная готовность колеса.</p></div></article><article class="current" data-reveal><span>2026</span><div><h3>Поздний ввод</h3><p>Смерч, Путь Дракона и Бумеранг — ближе к завершению сезона.</p></div></article><article class="future" data-reveal><span>2027</span><div><h3>Первый полный сезон</h3><p>Ориентир работы новых мощностей весь высокий сезон.</p></div></article></div><div class="launch-photos"><figure class="photo"><img src={asset('smerch.webp')} alt="Аттракцион Смерч" loading="lazy"/><figcaption>Смерч</figcaption></figure><figure class="photo"><img src={asset('dragon.webp')} alt="Аттракцион Путь Дракона" loading="lazy"/><figcaption>Путь Дракона</figcaption></figure></div></div><p class="stage-note"><b>План · октябрь 2026</b> — завершение пусконаладки и запуск «Сердца Москвы». Срез на сентябрь 2026.</p>
-</section></div>
-<div class="scene-shell"><section class="scene section finance-section tinted" id="finance" data-title="Финансовый результат"><img class="stage-brand" src={asset('skazka-logo.svg')} alt="Сказка" width="145" height="38"/><span class="stage-index">19 / {totalScenes}</span>
-<Head eyebrow="08 / Экономика бизнеса" title="Качество результата меняется." description="Первое полугодие: стабильная выручка, улучшение операционного результата."/>
-<div class="finance-layout"><div class="financial-bars"><div class="legend"><span><i class="old-dot"></i>1П2025</span><span><i class="new-dot"></i>1П2026</span><span>млн ₽</span></div>{rows.slice(0,3).map(row=><Chart title={row.label} values={row.values} max={600} labels={['2025','2026']} unit="млн ₽" compact/>)}</div><div class="finance-result"><div class="result-card" data-reveal><span class="label">Результат от продаж · млн ₽</span><div class="result-compare"><span class="old-result">{n(rows[3].values[0])}<small>1П2025</small></span><span class="result-arrow">→</span><strong>+{n(rows[3].values[1])}<small>1П2026</small></strong></div></div><div class="net-result" data-reveal><span class="label">Чистый результат · млн ₽</span><strong>{n(rows[4].values[0])} <span>→</span> +{n(rows[4].values[1])}</strong><p>1П2025 → 1П2026</p></div><div class="finance-deltas"><div><strong>+{n((rows[1].values[1]/rows[1].values[0]-1)*100)}%</strong><span>валовая прибыль</span></div><div><strong>−{n((1-rows[2].values[1]/rows[2].values[0])*100)}%</strong><span>операционные расходы</span></div></div></div></div>
-</section></div>
-<div class="scene-shell"><section class="scene section target-section" id="targets" data-title="Новый календарь"><img class="stage-brand" src={asset('skazka-logo.svg')} alt="Сказка" width="145" height="38"/><span class="stage-index">20 / {totalScenes}</span>
-<Head eyebrow="09 / Перспектива" title="Те же цели. Новый календарь." description="Целевые показатели перенесены на один год вслед за сроками запуска."/>
-<div class="event-calendar" data-calendar><div class="calendar-toolbar"><span class="label">Календарь целевых ориентиров</span><span>2027 — 2030</span><button class="loop-toggle" data-loop="calendar" aria-pressed="false" aria-label="Приостановить анимацию календаря">Ⅱ</button></div><div class="event-grid">{data.targets.map((t,i)=><button class={`event-card ${i===0?'selected':''}`} data-event={i} aria-pressed={i===0?'true':'false'} aria-describedby="calendar-hint"><div class="calendar-binding"><i></i><i></i></div><div class="event-year">{t.year}</div><span class="event-tag">{i===0?'Первый полный сезон':'Целевой ориентир'}</span><div class="event-revenue"><strong>{n(t.revenue)}</strong><span>млрд ₽ выручки</span></div><div class="event-traffic"><strong>{n(t.traffic)}</strong><span>млн гостей</span></div><div class="event-old">{t.oldYear} <span>→</span> {t.year}<span class="event-more">+</span></div><div class="event-progress"></div></button>)}</div><div class="calendar-hint" id="calendar-hint"><span class="hint-marker">↗</span><div>{data.targets.map((t,i)=><p data-event-hint={i} hidden={i!==0}><strong>{t.oldYear} → {t.year}</strong>Цель сохранена: {n(t.revenue)} млрд ₽ выручки и {n(t.traffic)} млн гостей.{i===0?' Ориентир первого полного сезона.':' Сдвиг календаря на один год.'}</p>)}</div></div></div><p class="stage-note">Целевые ориентиры. Реализация зависит от ввода, стабильной работы объектов и загрузки.</p>
-</section></div>
-<div class="scene-shell"><section class="scene section" id="execution" data-title="Следующий этап"><img class="stage-brand" src={asset('skazka-logo.svg')} alt="Сказка" width="145" height="38"/><span class="stage-index">21 / {totalScenes}</span>
-<Head eyebrow="10 / Следующий этап" title="От строительства — к загрузке." description="Созданная инфраструктура становится основой следующего этапа роста."/>
-<div class="execution-layout"><div class="execution-grid"><article data-reveal><span>01</span><div><h3>Полный сезон</h3><p>Завершение ввода и стабильная эксплуатация новой зоны.</p></div></article><article data-reveal><span>02</span><div><h3>Единый продукт</h3><p>Единый билет, удобный маршрут и поводы вернуться.</p></div></article><article data-reveal><span>03</span><div><h3>Расширение спроса</h3><p>Новая аудитория и последовательная загрузка мощностей.</p></div></article></div><figure class="photo execution-photo"><img src={asset('bumerang.webp')} alt="Бумеранг — новые мощности парка" loading="lazy"/><figcaption><strong>2027</strong><span>Ориентир первого полного сезона</span></figcaption></figure></div>
-</section></div>
+<FinanceBlock total={totalScenes}/>
 <SpeakerScene speaker={speakers[3]} total={totalScenes}/>
-<div class="scene-shell"><section class="scene section closing night" id="discussion" data-title="Итоги и вопросы"><img class="stage-brand" src={asset('skazka-logo.svg')} alt="Сказка" width="145" height="38"/><span class="stage-index">23 / {totalScenes}</span>
+<div class="scene-shell"><section class="scene section closing night" id="discussion" data-title="Итоги и вопросы"><img class="stage-brand" src={asset('skazka-logo.svg')} alt="Сказка" width="145" height="38"/><span class="stage-index">29 / {totalScenes}</span>
 <img class="closing-background" src={asset('wheel.webp')} alt="Колесо обозрения в парке Сказка" loading="lazy"/><div class="closing-shade"></div><div class="closing-copy"><p class="eyebrow" data-reveal>11 / Следующая глава</p><h2 data-reveal>Новый масштаб.<br/><span>Полный сезон.</span></h2><div class="closing-points"><p data-reveal>Инвестиции создали инфраструктуру.</p><p data-reveal>Спрос и качество результата растут.</p><p data-reveal>Следующий шаг — реализация потенциала.</p></div><strong class="questions">Вопросы и обсуждение <span>↗</span></strong></div>
 </section></div>
 </main>
