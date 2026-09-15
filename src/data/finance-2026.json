@@ -9,7 +9,7 @@
   },
   "demand": {"period": "Апрель–август", "years": [2025, 2026], "tickets": [127706, 249007], "conversion": [10.6, 22.8], "traffic2025": 1200000, "trafficAugust2026": 1093615, "trafficExpected2026": 1300000, "trafficTarget2027": 2500000, "conversionTarget2027": [30, 35]},
   "launches": [
-    {"month": "Май", "objects": ["Галактика"], "status": "operating"},
+    {"month": "Май", "objects": ["Галактика"], "status": "operating", "image": "galaktika.jpeg"},
     {"month": "Июнь", "objects": ["Паук"], "status": "operating", "image": "pauk.webp"},
     {"month": "Июль", "objects": ["Смерч", "Вихрь"], "status": "operating", "image": "vihr.webp"},
     {"month": "Август", "objects": ["Бумеранг"], "status": "operating", "image": "bumerang.webp"},
