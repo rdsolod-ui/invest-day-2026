@@ -1,16 +1,150 @@
 {
-  "edition":"2026-09-10",
-  "transformation":[
-    {"id":"products","value":"×2","label":"субпродуктов за год","note":"Продуктовая линейка","status":"Период сравнения уточняется","source":"protocol-2026"},
-    {"id":"birthdays","value":"3 → 15","label":"локаций для дней рождения","note":"Больше форматов праздника","status":"Период сравнения уточняется","source":"protocol-2026"},
-    {"id":"corporate","value":"+3","label":"корпоративные площадки","note":"Новые поводы для визита","status":"Период сравнения уточняется","source":"protocol-2026"},
-    {"id":"area","value":"6 → 14","label":"гектаров освоенной территории","note":"Из 34 га доступной площади","status":"Период и методика уточняются","source":"protocol-2026"}
+  "edition": "2026-09-15",
+  "transformation": [
+    {
+      "id": "products",
+      "value": "×2",
+      "label": "субпродуктов за год",
+      "note": "Продуктовая линейка",
+      "status": "Период сравнения уточняется",
+      "source": "protocol-2026"
+    },
+    {
+      "id": "birthdays",
+      "value": "3 → 15",
+      "label": "локаций для дней рождения",
+      "note": "Больше форматов праздника",
+      "status": "Период сравнения уточняется",
+      "source": "protocol-2026"
+    },
+    {
+      "id": "corporate",
+      "value": "+3",
+      "label": "корпоративные площадки",
+      "note": "Новые поводы для визита",
+      "status": "Период сравнения уточняется",
+      "source": "protocol-2026"
+    },
+    {
+      "id": "area",
+      "value": "6 → 14",
+      "label": "гектаров освоенной территории",
+      "note": "Из 34 га доступной площади",
+      "status": "Период и методика уточняются",
+      "source": "protocol-2026"
+    }
   ],
-  "investment":{"value":2.5,"unit":"млрд ₽","status":"Совокупная управленческая оценка парка и партнёров","preparedHectares":5,"rides":65,"ownRides":30,"partnerRides":35,"source":"finance-1"},
-  "historical":{"year":2024,"revenue":1.5,"traffic":1.5,"repeat":30,"status":"Оценка в материалах выпуска 2024 года","source":"finance-2"},
-  "oldPlan":[{"year":2025,"revenue":2.4,"traffic":2.25},{"year":2026,"revenue":4.2,"traffic":4.0},{"year":2027,"revenue":4.7,"traffic":4.5},{"year":2028,"revenue":5.4,"traffic":4.5},{"year":2029,"revenue":5.5,"traffic":5.0}],
-  "demand":{"period":"Апрель–август 2025 / 2026","years":[2025,2026],"tickets":[127706,249007],"conversion":[40,65],"rides":152300,"ridesPeriod":"1–27 августа 2026","newObjects":5,"source":"finance-3"},
-  "finance":{"period":"Первое полугодие 2025 / 2026","years":[2025,2026],"unit":"млн ₽","source":"finance-5","rows":[{"id":"revenue","label":"Выручка","values":[450.7,455.6]},{"id":"gross","label":"Валовая прибыль","values":[170.3,304.5]},{"id":"opex","label":"Операционные расходы","values":[492.2,379.1]},{"id":"sales","label":"Результат от продаж","values":[-42.4,76.7]},{"id":"net","label":"Чистый результат","values":[-77.5,2.7]}]},
-  "targets":[{"oldYear":2026,"year":2027,"revenue":4.2,"traffic":4.0},{"oldYear":2027,"year":2028,"revenue":4.7,"traffic":4.5},{"oldYear":2028,"year":2029,"revenue":5.4,"traffic":4.5},{"oldYear":2029,"year":2030,"revenue":5.5,"traffic":5.0}],
-  "targetStatus":"Целевые ориентиры. Реализация зависит от сроков ввода, стабильной работы объектов и загрузки."
+  "investment": {
+    "value": 2.5,
+    "unit": "млрд ₽",
+    "status": "Совокупная управленческая оценка парка и партнёров",
+    "preparedHectares": 5,
+    "rides": 72,
+    "ownRides": 33,
+    "partnerRides": 39,
+    "source": "finance-1"
+  },
+  "historical": {
+    "year": 2024,
+    "revenue": 1.5,
+    "traffic": 1.5,
+    "repeat": 30,
+    "status": "Оценка в материалах выпуска 2024 года",
+    "source": "finance-2"
+  },
+  "oldPlan": [
+    {
+      "year": 2025,
+      "revenue": 2.4,
+      "traffic": 2.25
+    },
+    {
+      "year": 2026,
+      "revenue": 4.2,
+      "traffic": 4.0
+    },
+    {
+      "year": 2027,
+      "revenue": 4.7,
+      "traffic": 4.5
+    },
+    {
+      "year": 2028,
+      "revenue": 5.4,
+      "traffic": 4.5
+    },
+    {
+      "year": 2029,
+      "revenue": 5.5,
+      "traffic": 5.0
+    }
+  ],
+  "demand": {
+    "period": "Апрель–август 2025 / 2026",
+    "years": [
+      2025,
+      2026
+    ],
+    "tickets": [
+      127706,
+      249007
+    ],
+    "conversion": [
+      10.6,
+      22.8
+    ],
+    "newObjects": 5,
+    "source": "finance-3"
+  },
+  "finance": {
+    "period": "Первое полугодие 2025 / 2026",
+    "years": [
+      2025,
+      2026
+    ],
+    "unit": "млн ₽",
+    "source": "finance-5",
+    "rows": [
+      {
+        "id": "revenue",
+        "label": "Выручка",
+        "values": [
+          450.7,
+          455.6
+        ]
+      },
+      {
+        "id": "gross",
+        "label": "Валовая прибыль",
+        "values": [
+          170.3,
+          304.5
+        ]
+      },
+      {
+        "id": "opex",
+        "label": "Операционные расходы",
+        "values": [
+          492.2,
+          379.1
+        ]
+      },
+      {
+        "id": "sales",
+        "label": "Результат от продаж",
+        "values": [
+          -42.4,
+          76.7
+        ]
+      },
+      {
+        "id": "net",
+        "label": "Чистый результат",
+        "values": [
+          -77.5,
+          2.7
+        ]
+      }
+    ]
+  }
 }

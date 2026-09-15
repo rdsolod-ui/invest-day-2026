@@ -1,9 +1,9 @@
 ---
-interface Props {id:string;title:string;index:number;total:number;night?:boolean}
-const {id,title,index,total,night=false}=Astro.props;
+interface Props {id:string;title:string;index:number;total:number;night?:boolean;className?:string}
+const {id,title,index,total,night=false,className=''}=Astro.props;
 const base=import.meta.env.BASE_URL.replace(/\/$/,'');
 ---
-<div class="scene-shell"><section class:list={['scene','section','cmo-scene',{night}]} id={id} data-title={title}>
+<div class="scene-shell"><section class:list={['scene','section','cmo-scene',className,{night}]} id={id} data-title={title}>
 <img class="stage-brand" src={`${base}/assets/skazka-logo.svg`} alt="Сказка" width="145" height="38"/><span class="stage-index">{String(index).padStart(2,'0')} / {total}</span>
 <slot/>
 </section></div>

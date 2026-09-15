@@ -4,12 +4,13 @@ import FinanceBlock from '../components/FinanceBlock.astro';
 import SpeakerScene from '../components/SpeakerScene.astro';
 import CmoBlock from '../components/CmoBlock.astro';
 import speakers from '../data/speakers.json';
-const totalScenes=30;
+const totalScenes=29;
 import '../styles/site.css';
 import '../styles/revision.css';
+import '../styles/finance.css';
 const base=import.meta.env.BASE_URL.replace(/\/$/,'');
 const asset=(s:string)=>`${base}/assets/${s}`;
-const nav=[['industry-location','Индустрия'],['product','Продукт'],['investment','Финансы'],['targets','Перспектива']];
+const nav=[['industry-location','Индустрия'],['product','Продукт'],['investment','Финансы'],['baseline','Перспектива']];
 ---
 <!doctype html>
 <html lang="ru">
@@ -46,7 +47,7 @@ const nav=[['industry-location','Индустрия'],['product','Продукт
 <SpeakerScene speaker={speakers[2]} total={totalScenes}/>
 <FinanceBlock total={totalScenes}/>
 <SpeakerScene speaker={speakers[3]} total={totalScenes}/>
-<div class="scene-shell"><section class="scene section closing night" id="discussion" data-title="Итоги и вопросы"><img class="stage-brand" src={asset('skazka-logo.svg')} alt="Сказка" width="145" height="38"/><span class="stage-index">30 / {totalScenes}</span>
+<div class="scene-shell"><section class="scene section closing night" id="discussion" data-title="Итоги и вопросы"><img class="stage-brand" src={asset('skazka-logo.svg')} alt="Сказка" width="145" height="38"/><span class="stage-index">29 / {totalScenes}</span>
 <img class="closing-background" src={asset('wheel.webp')} alt="Колесо обозрения в парке Сказка" loading="lazy"/><div class="closing-shade"></div><div class="closing-copy"><p class="eyebrow" data-reveal>11 / Следующая глава</p><h2 data-reveal>Новый масштаб.<br/><span>Полный сезон.</span></h2><div class="closing-points"><p data-reveal>Инвестиции создали инфраструктуру.</p><p data-reveal>Спрос и качество результата растут.</p><p data-reveal>Следующий шаг — реализация потенциала.</p></div><strong class="questions">Вопросы и обсуждение <span>↗</span></strong></div>
 </section></div>
 </main>
