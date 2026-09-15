@@ -1,0 +1,41 @@
+/* A fixed, high-contrast QR stays motionless while the reading path reveals. */
+.qr-scene{background:#e6f3ef;overflow:hidden;--qr-accent:#006b85}
+:root[data-theme=dark] .qr-scene{background:#082a34;--qr-accent:#d9f66f}
+.qr-copy{position:absolute;left:112px;top:170px;width:835px}
+.qr-copy .eyebrow{font-size:24px;letter-spacing:.1em;margin-bottom:30px}
+.qr-copy h2{font:750 126px/.99 Manrope,Arial,sans-serif;letter-spacing:-.055em;text-wrap:initial}
+.qr-copy h2 span{color:var(--qr-accent)}
+.qr-intro{font-size:39px;line-height:1.32;margin-top:32px;color:var(--muted)}
+.qr-steps{list-style:none;margin:40px 0 0;padding:0;display:grid;gap:22px}
+.qr-steps li{display:flex;align-items:center;gap:23px;font-size:35px;line-height:1.22}
+.qr-step-number{display:grid;place-items:center;flex:none;width:54px;height:54px;border-radius:50%;background:var(--ink);color:var(--bg);font:650 27px Manrope,Arial,sans-serif}
+.qr-ticket{position:absolute;left:1048px;top:127px;width:760px;padding:32px 40px 29px;background:#fff;color:#082a34;border-radius:42px 42px 42px 8px;box-shadow:0 18px 70px #082a3410}
+.qr-ticket::before{content:'';position:absolute;left:-30px;bottom:0;width:60px;height:50px;background:#fff;clip-path:polygon(100% 0,100% 100%,0 100%)}
+.qr-ticket-label{display:flex;align-items:center;justify-content:space-between;gap:16px;font:550 29px/1.25 Golos,Arial,sans-serif;padding:3px 0 15px}
+.qr-ticket-label>span{font-size:38px;color:#006b85}
+.qr-code-link{display:block;width:640px;height:640px;margin:auto}
+.qr-code-link img{width:100%;height:100%;object-fit:contain;image-rendering:pixelated;background:#fff}
+.qr-ticket figcaption{border-top:1px solid #c8dcdd;margin-top:9px;padding-top:21px;font:550 32px/1.25 Golos,Arial,sans-serif;text-align:center;white-space:nowrap}
+.qr-ticket a{text-decoration:none}.qr-ticket a:focus-visible{outline-color:#006b85}
+.qr-scene-foot{position:absolute;left:112px;right:112px;bottom:43px;border-top:1px solid var(--line);padding-top:21px;display:flex;justify-content:space-between;gap:30px;font-size:24px;color:var(--muted)}
+.qr-scene-foot i{font-style:normal;margin:0 13px;color:var(--blue)}
+.closing a.questions{text-decoration:none;display:inline-flex;align-items:center;gap:20px}
+body.presenting:has(#questions.active-scene) #invest-questions-widget{visibility:hidden}
+@media(max-width:900px){
+ body:not(.presenting) .qr-scene{padding:85px 24px 34px;height:auto;min-height:0}
+ body:not(.presenting) .qr-copy{position:static;width:auto}
+ body:not(.presenting) .qr-copy .eyebrow{font-size:13px;margin-bottom:22px}
+ body:not(.presenting) .qr-copy h2{font-size:clamp(54px,11vw,92px)}
+ body:not(.presenting) .qr-intro{font-size:23px;margin-top:24px}
+ body:not(.presenting) .qr-steps{margin-top:30px;gap:17px}
+ body:not(.presenting) .qr-steps li{font-size:21px;gap:15px}
+ body:not(.presenting) .qr-step-number{width:38px;height:38px;font-size:20px}
+ body:not(.presenting) .qr-ticket{position:relative;left:auto;top:auto;width:100%;max-width:640px;margin:38px auto 30px;padding:22px 16px;border-radius:25px 25px 25px 6px}
+ body:not(.presenting) .qr-ticket::before{left:-13px;width:28px;height:30px}
+ body:not(.presenting) .qr-ticket-label{font-size:17px;padding-bottom:9px}
+ body:not(.presenting) .qr-ticket-label>span{font-size:25px}
+ body:not(.presenting) .qr-code-link{width:100%;height:auto;aspect-ratio:1}
+ body:not(.presenting) .qr-ticket figcaption{font-size:clamp(14px,3.6vw,23px);padding-top:14px}
+ body:not(.presenting) .qr-scene-foot{position:static;flex-direction:column;font-size:15px;gap:12px}
+ body:not(.presenting) .qr-scene-foot i{margin:0 3px}
+}
