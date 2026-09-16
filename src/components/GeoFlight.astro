@@ -1,0 +1,49 @@
+---
+const base=import.meta.env.BASE_URL.replace(/\/$/,'');
+---
+<figure class="geo-flight" aria-label="Анимация карты: от парка Сказка в Крылатском к Москве и Подмосковью. Голубым выделена Москва, салатовым — западные посёлки, фиолетовым — остальные направления. Зоны условные, показывают приоритеты привлечения.">
+  <img class="geo-flight-poster" src={`${base}/assets/geography-flight-poster.jpg`} width="1000" height="760" alt="География привлечения: Москва, западные посёлки и остальные направления Подмосковья" loading="lazy"/>
+  <video data-geo-flight muted loop playsinline preload="none" aria-hidden="true" tabindex="-1" poster={`${base}/assets/geography-flight-poster.jpg`}>
+    <source src={`${base}/assets/geography-flight.mp4`} type="video/mp4"/>
+  </video>
+  <div class="geo-flight-heading"><span class="geo-flight-dot"></span><span data-geo-caption>МОСКВА + ПОДМОСКОВЬЕ</span></div>
+  <div class="geo-flight-legend" aria-hidden="true"><span class="geo-legend-city"><b>01</b> Москва</span><span class="geo-legend-west"><b>02</b> Запад МО</span><span class="geo-legend-region"><b>03</b> Другие направления</span></div>
+  <figcaption>© Яндекс · © NASA · © ООО ИТЦ «СКАНЭКС»</figcaption>
+</figure>
+<style>
+.geo-flight{position:relative;width:100%;height:560px;margin:0;overflow:hidden;background:#091d24;border:1px solid var(--line);isolation:isolate}
+.geo-flight-poster,.geo-flight video{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover}
+.geo-flight video{opacity:0;pointer-events:none}.geo-flight video.is-playing{opacity:1}.geo-flight:has(video.is-playing) .geo-flight-poster{opacity:0}
+.geo-flight-heading{position:absolute;top:22px;left:22px;display:flex;align-items:center;gap:10px;padding:12px 16px;background:#071d27df;color:#fff;border:1px solid #46d5f34d;font-size:18px;font-weight:600;letter-spacing:.055em}
+.geo-flight-dot{height:8px;width:8px;border-radius:50%;background:#39dbff;box-shadow:0 0 12px #00bfff}
+.geo-flight-legend{position:absolute;bottom:37px;left:18px;right:18px;display:flex;gap:8px;padding:12px 10px;background:#071d27ed;border:1px solid #9bbcc43b;color:white;font-size:17px;align-items:center;justify-content:space-between}
+.geo-flight-legend span{display:flex;gap:6px;align-items:center;white-space:nowrap}.geo-flight-legend b{font-size:18px}.geo-legend-city b{color:#3fd5ff}.geo-legend-west b{color:#c5ff46}.geo-legend-region b{color:#bd94ff}
+.geo-flight figcaption{position:absolute;bottom:0;left:0;right:0;padding:6px 12px;background:#071d27e8;color:#d9e4e6;font-size:12px;text-align:right}
+:global(#scale[data-geo-step="1"] .geo-layers article:nth-child(1)){border-color:#3fd5ff}
+:global(#scale[data-geo-step="2"] .geo-layers article:nth-child(2)){border-color:#a4ce2a}
+:global(#scale[data-geo-step="3"] .geo-layers article:nth-child(3)){border-color:#a279e3}
+@media(prefers-reduced-motion:reduce){.geo-flight video{visibility:hidden}.geo-flight-poster{opacity:1!important}}
+@media(max-width:900px){:global(body:not(.presenting)) .geo-flight{height:auto;aspect-ratio:1000/760}:global(body:not(.presenting)) .geo-flight-heading{font-size:12px;top:10px;left:10px;padding:8px}:global(body:not(.presenting)) .geo-flight-legend{font-size:10px;left:7px;right:7px;padding:8px 5px;gap:3px;bottom:27px}:global(body:not(.presenting)) .geo-flight-legend b{font-size:12px}:global(body:not(.presenting)) .geo-flight-legend span{gap:3px}:global(body:not(.presenting)) .geo-flight figcaption{font-size:8px}}
+</style>
+<script>
+const video=document.querySelector<HTMLVideoElement>('[data-geo-flight]');
+if(video){
+ const scene=video.closest<HTMLElement>('.scene')!;const caption=scene.querySelector<HTMLElement>('[data-geo-caption]')!;let inView=false,wasVisible=false;
+ function updateCaption(){
+  if(!video||video.paused){caption.textContent='МОСКВА + ПОДМОСКОВЬЕ';delete scene.dataset.geoStep;return;}
+  const t=video.currentTime;scene.dataset.geoStep=t>=12.75&&t<17.5?'3':t>=10.75&&t<17.5?'2':t>=8.9&&t<17.5?'1':'0';
+  caption.textContent=t<3.5||t>18.9?'СКАЗКА · КРЫЛАТСКОЕ':t<8.9?'ОТ ПАРКА — К РЕГИОНУ':'МОСКВА + ПОДМОСКОВЬЕ';
+ }
+ function sync(){
+  if(!video)return;
+  const visible=document.body.classList.contains('presenting')?scene.classList.contains('active-scene'):inView;
+  const play=visible&&!document.hidden&&document.documentElement.dataset.motion==='on';
+  if(play){if(!wasVisible)video.currentTime=0;if(video.paused)void video.play().catch(()=>video.classList.remove('is-playing'));}
+  else{video.pause();video.classList.remove('is-playing');}
+  wasVisible=visible;updateCaption();
+ }
+ video.addEventListener('playing',()=>{video.classList.add('is-playing');sync()});video.addEventListener('error',()=>{video.classList.remove('is-playing');caption.textContent='МОСКВА + ПОДМОСКОВЬЕ'});video.addEventListener('timeupdate',updateCaption);
+ new IntersectionObserver(entries=>{inView=entries[0].isIntersecting;sync()},{threshold:.35}).observe(video);
+ const observer=new MutationObserver(sync);observer.observe(document.documentElement,{attributes:true,attributeFilter:['data-motion']});observer.observe(document.body,{attributes:true,attributeFilter:['class']});observer.observe(scene,{attributes:true,attributeFilter:['class']});document.addEventListener('visibilitychange',sync);sync();
+}
+</script>

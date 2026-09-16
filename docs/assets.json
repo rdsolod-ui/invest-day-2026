@@ -197,5 +197,41 @@
     "height": 595,
     "bytes": 159636,
     "sha256": "d9b3e25f84df61c01a4f4bc05e9a01b83a3a1e28fd3bd885ead22a4911fe142c"
+  },
+  {
+    "file": "assets/geography-flight.mp4",
+    "source": "Blender 5.2 camera flight from Yandex hybrid-map browser captures",
+    "sourcePage": "https://yandex.ru/maps/213/moscow/hybrid/?ll=37.434686%2C55.771473&z=17",
+    "mapZooms": [
+      17,
+      14,
+      11,
+      8
+    ],
+    "transformation": "Registered map textures on a 3D surface; oblique camera pullback, temporary defocus and schematic marketing-priority zones. Zones are not administrative boundaries, measured catchment or campaign targeting. Credits retained. See docs/geography-flight.md.",
+    "verified": "2026-09-16",
+    "width": 1000,
+    "height": 760,
+    "durationSeconds": 20,
+    "frames": 480,
+    "bytes": 5771036,
+    "sha256": "4510e3bfb7ea636283be11a744294daafa5ac7afdea5876cda2396b0bd6fa5c1"
+  },
+  {
+    "file": "assets/geography-flight-poster.jpg",
+    "source": "Blender 5.2 camera flight from Yandex hybrid-map browser captures",
+    "sourcePage": "https://yandex.ru/maps/213/moscow/hybrid/?ll=37.434686%2C55.771473&z=17",
+    "mapZooms": [
+      17,
+      14,
+      11,
+      8
+    ],
+    "transformation": "Registered map textures on a 3D surface; oblique camera pullback, temporary defocus and schematic marketing-priority zones. Zones are not administrative boundaries, measured catchment or campaign targeting. Credits retained. See docs/geography-flight.md.",
+    "verified": "2026-09-16",
+    "width": 1000,
+    "height": 760,
+    "bytes": 317832,
+    "sha256": "bd25b9a27a45a9befb368cbd35c499128c6dce6104afda2cd4e6a151ca08d7e1"
   }
 ]
