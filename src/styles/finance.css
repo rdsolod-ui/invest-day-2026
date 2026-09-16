@@ -11,7 +11,7 @@
 .finance-model-scene .model-plot-label{position:static;display:flex;align-items:center;gap:15px;height:36px}.finance-model-scene .model-plot-label>span{margin-top:0}.finance-model-scene .model-plot svg{height:265px}
 
 /* Blender-rendered coupon rate: the poster remains available without motion or video. */
-.fin-rate-visual{position:relative;width:100%;aspect-ratio:2;overflow:hidden;border-radius:12px;margin:18px 0 20px;background:#10343e}
+.fin-rate-visual{position:relative;width:100%;aspect-ratio:2;overflow:visible;margin:18px 0 20px;background:transparent;filter:drop-shadow(0 0 7px #00bfff88) drop-shadow(0 0 15px #00aaff44)}
 .fin-rate-visual img,.fin-rate-visual video{display:block;width:100%;height:100%;object-fit:cover}
 .fin-rate-visual video{position:absolute;inset:0;opacity:0;pointer-events:none}
 .fin-rate-visual video.is-playing{opacity:1}
@@ -19,3 +19,10 @@
 .fin-bonds .fin-rate-card p{font-size:25px;margin-top:12px}
 @media(prefers-reduced-motion:reduce){.fin-rate-visual video{visibility:hidden}}
 @media(max-width:900px){body:not(.presenting) .fin-rate-visual{max-width:560px}body:not(.presenting) .fin-bonds .fin-rate-card p{font-size:23px}}
+
+.fin-rate-visual:has(video.is-playing) img{opacity:0}
+.fin-rate-visual:has(video.is-playing){animation:rate-neon-pulse 2s ease-in-out infinite}
+@keyframes rate-neon-pulse{0%,100%{filter:drop-shadow(0 0 5px #00bfff77) drop-shadow(0 0 11px #00aaff33)}50%{filter:drop-shadow(0 0 11px #16d9ffcc) drop-shadow(0 0 25px #00bfff88)}}
+[data-motion="off"] .fin-rate-visual{animation:none}
+[data-motion="off"] .fin-rate-visual img{opacity:1}
+@media(prefers-reduced-motion:reduce){.fin-rate-visual{animation:none!important}.fin-rate-visual img{opacity:1!important}}
