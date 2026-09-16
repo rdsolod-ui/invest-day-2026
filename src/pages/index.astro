@@ -6,6 +6,11 @@ import SpeakerScene from '../components/SpeakerScene.astro';
 import CmoBlock from '../components/CmoBlock.astro';
 import speakers from '../data/speakers.json';
 const totalScenes=30;
+const shareUrl='https://marketing.parkskazka.ru/invest-day-2026/';
+const shareTitle='День инвестора 2026 · Парк «Сказка»';
+const shareDescription='16 сентября · Москва. Продукт, трансформация парка, инвестиционная программа и финансовые результаты.';
+const shareImage=shareUrl+'assets/invest-day-2026-og-v1.jpg';
+const shareImageAlt='День инвестора 2026 — Парк Сказка. 16 сентября, Москва. Художественная визуализация аттракционов.';
 import '../styles/site.css';
 import '../styles/revision.css';
 import '../styles/finance.css';
@@ -22,7 +27,24 @@ const nav=[['industry-location','Индустрия'],['product','Продукт
 <meta name="description" content="От районного парка к городскому масштабу. Трансформация продукта, инвестиционная программа, результаты и целевые ориентиры Парка Сказка."/>
 <meta name="theme-color" content="#102B46"/>
 <link rel="canonical" href="https://marketing.parkskazka.ru/invest-day-2026/"/>
-<meta property="og:title" content="Инвест День 2026 · Парк Сказка"/><meta property="og:description" content="Новый масштаб парка. Реальные инвестиции. Перспектива полного сезона."/><meta property="og:type" content="website"/><meta property="og:locale" content="ru_RU"/><meta property="og:image" content={`https://marketing.parkskazka.ru${asset('park-wide.webp')}`}/>
+<meta property="og:title" content={shareTitle}/>
+<meta property="og:description" content={shareDescription}/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content={shareUrl}/>
+<meta property="og:site_name" content="Парк «Сказка»"/>
+<meta property="og:locale" content="ru_RU"/>
+<meta property="og:image" content={shareImage}/>
+<meta property="og:image:secure_url" content={shareImage}/>
+<meta property="og:image:type" content="image/jpeg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content={shareImageAlt}/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content={shareTitle}/>
+<meta name="twitter:description" content={shareDescription}/>
+<meta name="twitter:image" content={shareImage}/>
+<meta name="twitter:image:alt" content={shareImageAlt}/>
+
 <link rel="icon" type="image/svg+xml" href={asset('skazka-logo.svg')}/>
 <link rel="preload" href={asset('manrope.woff2')} as="font" type="font/woff2" crossorigin/>
 <link rel="preload" href={asset('golos.woff2')} as="font" type="font/woff2" crossorigin/>

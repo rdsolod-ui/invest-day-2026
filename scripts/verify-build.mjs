@@ -1,6 +1,14 @@
 import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';import crypto from 'node:crypto';
 const root=path.resolve('dist');const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
 assert.equal((html.match(/class="scene /g)||[]).length,30,'30 scenes required');
+const meta=new Map([...html.matchAll(/<meta (?:property|name)="([^"]+)" content="([^"]*)"/g)].map(m=>[m[1],m[2]]));
+const shareUrl='https://marketing.parkskazka.ru/invest-day-2026/';
+const shareImage=shareUrl+'assets/invest-day-2026-og-v1.jpg';
+for(const [key,value] of Object.entries({'og:url':shareUrl,'og:type':'website','og:locale':'ru_RU','og:image':shareImage,'og:image:secure_url':shareImage,'og:image:type':'image/jpeg','og:image:width':'1200','og:image:height':'630','twitter:card':'summary_large_image','twitter:image':shareImage}))assert.equal(meta.get(key),value,`Invalid social metadata: ${key}`);
+for(const key of ['og:title','og:description','og:site_name','og:image:alt','twitter:title','twitter:description','twitter:image:alt'])assert.ok(meta.get(key),`Missing social metadata: ${key}`);
+assert.equal(meta.get('og:title'),meta.get('twitter:title'));
+assert.ok(fs.statSync(path.join(root,'assets/invest-day-2026-og-v1.jpg')).size<600000,'Social cover must stay lightweight');
+
 for(const text of ['249','455,6','76,7','2027','2028','14.09','RU000A109PK2','Тёмная','Системная'])assert.ok(html.includes(text),`Missing ${text}`);
 for(const match of html.matchAll(/(?:src|href)="(\/invest-day-2026\/[^"#?]+)"/g)){const relative=match[1].replace('/invest-day-2026/','');assert.ok(fs.existsSync(path.join(root,relative)),`Missing asset ${relative}`);}
 assert.ok(!/\.msg|mailto:|C:\\Users|\/mnt\/c\/|@parkskazka\.com/.test(html),'Private source material in output');
