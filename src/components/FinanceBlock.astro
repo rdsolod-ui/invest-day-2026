@@ -1,4 +1,5 @@
 ---
+import RateVisual from './RateVisual.astro';
 import Stage from './CmoStage.astro';import Head from './SectionHead.astro';import PlanComparison from './PlanComparison.astro';import data from '../data/finance-2026.json';
 const {total}=Astro.props;const asset=(s:string)=>`${import.meta.env.BASE_URL.replace(/\/$/,'')}/assets/${s}`;const n=(v:number,d=1)=>new Intl.NumberFormat('ru-RU',{minimumFractionDigits:d,maximumFractionDigits:d}).format(v);
 const f=data.halfYear,a=data.august,d=data.demand;const growth=(a.revenueRub[1]/a.revenueRub[0]-1)*100;
@@ -32,6 +33,6 @@ const f=data.halfYear,a=data.august,d=data.demand;const growth=(a.revenueRub[1]/
 </Stage>
 <Stage id="execution" title="Купон, ставка и погашение" index={27} total={total} className="finance-scene">
 <Head eyebrow="Обязательства перед инвесторами" title="Купон. Ставка. Погашение." description="Обслуживание займа — за счёт собственной выручки парка."/>
-<div class="fin-bonds"><article data-flow><span class="fin-bond-step">01 · Купон</span><strong>01.10.2026</strong><h3>Выплата 8-го купона</h3><p>В полном объёме<br/>и в установленный срок.</p></article><article data-flow><span class="fin-bond-step">02 · Ставка</span><strong>9–12</strong><h3>Купонные периоды</h3><p>Официальное раскрытие<br/>в установленном порядке.</p></article><article data-flow><span class="fin-bond-step">03 · Погашение</span><strong>30.09.2027</strong><h3>Финальное погашение</h3><p>{data.bonds.issue}<br/>{data.bonds.isin}</p></article></div>
+<div class="fin-bonds"><article data-flow><span class="fin-bond-step">01 · Купон</span><strong>01.10.2026</strong><h3>Выплата 8-го купона</h3><p>В полном объёме<br/>и в установленный срок.</p></article><article class="fin-rate-card" data-flow><span class="fin-bond-step">02 · Ставка</span><RateVisual/><h3>Годовых</h3><p>Ставка купона опубликована.</p></article><article data-flow><span class="fin-bond-step">03 · Погашение</span><strong>30.09.2027</strong><h3>Финальное погашение</h3><p>{data.bonds.issue}<br/>{data.bonds.isin}</p></article></div>
 <div class="fin-bond-thesis" data-reveal><p>Сроки реализации инвестиционной программы изменились.</p><strong>Обязательства перед инвесторами — нет.</strong></div>
 </Stage>

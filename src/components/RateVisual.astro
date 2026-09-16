@@ -1,0 +1,32 @@
+---
+const base=import.meta.env.BASE_URL.replace(/\/$/,'');
+---
+<div class="fin-rate-visual" role="img" aria-label="Ставка купона — 24% годовых">
+  <img src={`${base}/assets/coupon-rate-24.jpg`} width="800" height="400" alt="" loading="lazy"/>
+  <video data-rate-animation muted loop playsinline preload="none" aria-hidden="true" tabindex="-1" poster={`${base}/assets/coupon-rate-24.jpg`}>
+    <source src={`${base}/assets/coupon-rate-24.mp4`} type="video/mp4"/>
+  </video>
+  <span class="sr-only">24%</span>
+</div>
+<script>
+const videos=Array.from(document.querySelectorAll<HTMLVideoElement>('[data-rate-animation]'));
+const inView=new Set<Element>();
+function syncRateVideos(){
+ for(const video of videos){
+  const scene=video.closest('.scene');
+  const visible=document.body.classList.contains('presenting')?scene?.classList.contains('active-scene'):inView.has(video);
+  const play=visible&&!document.hidden&&document.documentElement.dataset.motion==='on';
+  if(play){if(video.paused)void video.play().catch(()=>video.classList.remove('is-playing'));}
+  else{video.pause();video.classList.remove('is-playing');}
+ }
+}
+for(const video of videos){video.addEventListener('playing',()=>{video.classList.add('is-playing');syncRateVideos()});video.addEventListener('error',()=>video.classList.remove('is-playing'));}
+const visibility=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting)inView.add(entry.target);else inView.delete(entry.target);}syncRateVideos()},{threshold:.25});
+videos.forEach(video=>visibility.observe(video));
+const states=new MutationObserver(syncRateVideos);
+states.observe(document.documentElement,{attributes:true,attributeFilter:['data-motion']});
+states.observe(document.body,{attributes:true,attributeFilter:['class']});
+videos.forEach(video=>{const scene=video.closest('.scene');if(scene)states.observe(scene,{attributes:true,attributeFilter:['class']});});
+document.addEventListener('visibilitychange',syncRateVideos);
+syncRateVideos();
+</script>

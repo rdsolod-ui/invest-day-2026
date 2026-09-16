@@ -18,5 +18,5 @@
   ],
   "halfYear": {"years": [2025, 2026], "unit": "млн ₽", "revenue": [450.7, 455.6], "operatingProfit": [-42.4, 76.7], "expenseBase": [492.2, 379.1], "grossProfit": [170.3, 304.5]},
   "august": {"years": [2025, 2026], "revenueRub": [246800000, 336560000], "newObjects": 5, "rides": 72986, "newRevenueRub": 45961368.28},
-  "bonds": {"issue": "БО-П01", "isin": "RU000A109PK2", "couponNumber": 8, "couponDate": "2026-10-01", "nextPeriods": [9, 12], "rateStatus": "official-disclosure", "maturityDate": "2027-09-30"}
+  "bonds": {"issue": "БО-П01", "isin": "RU000A109PK2", "couponNumber": 8, "couponDate": "2026-10-01", "nextPeriods": [9, 12], "rateStatus": "published", "rate": 24, "maturityDate": "2027-09-30"}
 }
